@@ -2,7 +2,10 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html, js, jsx}"],
+  content: [
+    "./src/**/*.{html, js, jsx}",
+    "./*.{html, js, jsx}"
+  ],
   theme: {
     // A l'extérieur, ça remplace les fonctionnalités se trouvant dans le thème tailwind
     extend: {
