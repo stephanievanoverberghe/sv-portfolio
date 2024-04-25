@@ -26,6 +26,9 @@ module.exports = {
         sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
         Patua: ['Patua One', 'serif'],
       },
+      boxShadow: {
+        'dark-hover': 'inset -4px -4px 4px 0 #fd6f88, inset 6px 6px 4px 0 #4d041c',
+      }
     },
   },
   plugins: [],
