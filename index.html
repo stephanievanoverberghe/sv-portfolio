@@ -23,26 +23,80 @@
     <title>Vanoverberghe Stéphanie - Portfolio</title>
   </head>
 
-  <body class="h-screen">
-    <div class="container">
-      <header>
-        <div class="fixed bottom-0 w-full bg-red-pink-950 text-red-pink-200">
-          <div class="flex items-center justify-around p-3.5">
-            <div
-              class="icon rounded-full bg-red-pink-950 p-6 shadow-dark-hover"
+  <body class="h-screen bg-red-pink-50">
+    <div>
+      <!-- HEADER MOBILE -->
+      <header
+        class="fixed bottom-0 flex w-full items-center justify-around bg-red-pink-50 p-3.5 text-red-pink-700 sm:hidden"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+            <i class="fa-solid fa-house fa-lg"></i>
+          </div>
+          <span class="pt-2 font-Patua">Accueil</span>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+            <i class="fa-solid fa-ellipsis fa-2xl"></i>
+          </div>
+          <span class="pt-2 font-Patua">Menu</span>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+            <i class="fa-solid fa-sun fa-lg"></i>
+          </div>
+          <span class="pt-2 font-Patua">Light</span>
+        </div>
+      </header>
+      <!-- HEADER TABLET -->
+      <header
+        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 sm:flex sm:items-center sm:justify-between sm:rounded-full lg:hidden"
+      ></header>
+      <!-- HEADER DESKTOP -->
+      <header
+        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 lg:flex lg:items-center lg:justify-between lg:rounded-full"
+      >
+        <div class="px-10 py-5">
+          <img
+            src="src/assets/img/logo-light.png"
+            alt="Logo du portfolio"
+            class="h-12"
+          />
+        </div>
+        <div class="flex gap-10">
+          <a
+            href="#"
+            class="shadow-light-default hover:shadow-light-hover rounded-full bg-red-pink-50 px-8 py-3"
+            >A propos</a
+          >
+          <a
+            href="#"
+            class="shadow-light-default hover:shadow-light-hover rounded-full bg-red-pink-50 px-8 py-3"
+            >Projets</a
+          >
+          <a
+            href="#"
+            class="shadow-light-default hover:shadow-light-hover rounded-full bg-red-pink-50 px-8 py-3"
+            >Blog</a
+          >
+        </div>
+        <div class="flex items-center justify-around">
+          <div class="shadow-light-hover rounded-full bg-red-pink-50 px-1 py-1">
+            <i
+              class="fa-solid fa-sun shadow-light-pressed hover:shadow-light-default h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2"
+            ></i>
+            <i
+              class="fa-solid fa-moon h-8 w-8 rounded-full bg-red-pink-100 p-2 opacity-0"
+            ></i>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="shadow-light-default hover:shadow-light-hover ml-5 h-full rounded-e-full bg-red-pink-50 px-4 py-7"
+              >Me contacter</a
             >
-              <i class="fa-solid fa-house fa-lg"></i>
-            </div>
-            <div class="icon">
-              <i class="fa-solid fa-ellipsis fa-2xl"></i>
-            </div>
-            <div class="icon">
-              <i class="fa-solid fa-gear fa-lg"></i>
-            </div>
           </div>
         </div>
-
-        <div class="header-desktop"></div>
       </header>
 
       <main></main>

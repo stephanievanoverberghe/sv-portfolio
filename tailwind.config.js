@@ -22,7 +22,8 @@ module.exports = {
           700: '#c10f42',
           800: '#a1103d',
           900: '#8a113b',
-          950: '#4d041c'
+          950: '#4d041c',
+          1000: '#2C000F'
         }
       },
       fontFamily: {
@@ -30,8 +31,13 @@ module.exports = {
         Patua: ['Patua One', 'serif'],
       },
       boxShadow: {
-        'dark-hover': 'inset -4px -4px 4px 0 #fd6f88, inset 6px 6px 4px 0 #4d041c',
-      }
+        'dark-hover': 'inset -4px -4px 4px 0 #fd6f88, inset 6px 6px 4px 0 #2C000F, -2px -2px 6px 0 #fd6f88, 5px 5px 4px 0 #2C000F',
+        'dark-default': '-2px -2px 6px 0 #fd6f88, 5px 5px 4px 0 #2C000F',
+        'dark-pressed': 'inset -2px -2px 4px 0 #fd6f88, inset 3px 3px 4px 0 #2C000F',
+        'light-hover': 'inset -4px -4px 4px 0 #fff, inset 6px 6px 4px 0 #D4C8CA, -2px -2px 6px 0 #fff, 5px 5px 4px 0 #D4C8CA',
+        'light-default': '-2px -2px 6px 0 #fff, 5px 5px 4px 0 #D4C8CA',
+        'light-pressed': 'inset -2px -2px 4px 0 #fff, inset 3px 3px 4px 0 #D4C8CA',
+      },
     },
   },
   plugins: [],
