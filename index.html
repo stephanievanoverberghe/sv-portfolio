@@ -23,15 +23,83 @@
     <title>Vanoverberghe Stéphanie - Portfolio</title>
   </head>
 
-  <body class="h-screen bg-red-pink-50">
-    <div>
+  <body
+    class="h-screen bg-red-pink-50 text-red-pink-700 dark:bg-red-950 dark:text-red-pink-100"
+  >
+    <header class="">
+      <!-- HEADER TABLET AND DESKTOP -->
+      <div
+        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua sm:flex sm:items-center sm:justify-between sm:rounded-full dark:bg-red-pink-900"
+      >
+        <div class="px-10 py-5">
+          <a href="/" title="Accueil">
+            <img
+              src="src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="h-14 transition-transform hover:scale-125 dark:hidden"
+            />
+            <img
+              src="src/assets/img/logo-dark.png"
+              alt="Logo du portfolio"
+              class="hidden h-14 transition-transform hover:scale-125 dark:block"
+            />
+          </a>
+        </div>
+        <div class="hidden lg:block">
+          <div class="flex gap-10">
+            <a
+              href="#"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >A propos</a
+            >
+            <a
+              href="#"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Projets</a
+            >
+            <a
+              href="#"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Blog</a
+            >
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <div
+            class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
+          >
+            <i
+              class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-100 shadow-light-pressed transition-shadow duration-300 hover:shadow-light-default dark:opacity-0"
+              id="light"
+            ></i>
+            <i
+              class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:bg-red-pink-900 dark:opacity-100"
+              id="dark"
+            ></i>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="ml-5 hidden h-full rounded-e-full bg-red-pink-50 px-4 py-7 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Me contacter</a
+            >
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="mx-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+            >
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
       <!-- HEADER MOBILE -->
-      <header
-        class="fixed bottom-0 flex w-full items-center justify-around bg-red-pink-100 p-3.5 text-red-pink-700 sm:hidden"
+      <div
+        class="fixed bottom-0 flex w-full items-center justify-around p-3.5 sm:hidden"
       >
         <div class="flex flex-col items-center justify-center">
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
           >
             <i class="fa-solid fa-house fa-lg"></i>
           </button>
@@ -39,7 +107,7 @@
         </div>
         <div class="flex flex-col items-center justify-center">
           <button
-            class="flex h-12 w-12 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
           >
             <i class="fa-solid fa-ellipsis fa-2xl"></i>
           </button>
@@ -47,91 +115,22 @@
         </div>
         <div class="flex flex-col items-center justify-center">
           <button
-            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
           >
-            <i class="fa-solid fa-sun fa-lg"></i>
+            <i class="fa-solid fa-sun fa-lg dark:hidden" id="light-mobile"></i>
+            <i
+              class="fa-solid fa-moon fa-lg hidden dark:block"
+              id="dark-mobile"
+            ></i>
           </button>
           <span class="pt-2 font-Patua">Light</span>
         </div>
-      </header>
-      <!-- HEADER TABLET -->
-      <header
-        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 sm:flex sm:items-center sm:justify-between sm:rounded-full lg:hidden"
-      >
-        <div class="px-10 py-5">
-          <a href="/" title="Accueil">
-            <img
-              src="src/assets/img/logo-light.png"
-              alt="Logo du portfolio"
-              class="h-12"
-            />
-          </a>
-        </div>
-        <div class="flex items-center justify-center">
-          <div class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover">
-            <i
-              class="fa-solid fa-sun h-8 w-8 rounded-full bg-red-pink-100 p-2 shadow-light-pressed"
-            ></i>
-            <i
-              class="fa-solid fa-moon h-8 w-8 rounded-full bg-red-pink-100 p-2 opacity-0"
-            ></i>
-          </div>
-          <div class="p-10">
-            <i class="fa-solid fa-bars fa-2xl"></i>
-          </div>
-        </div>
-      </header>
-      <!-- HEADER DESKTOP -->
-      <header
-        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 lg:flex lg:items-center lg:justify-between lg:rounded-full"
-      >
-        <div class="px-10 py-5">
-          <a href="/" title="Accueil">
-            <img
-              src="src/assets/img/logo-light.png"
-              alt="Logo du portfolio"
-              class="h-12 cursor-pointer transition-transform duration-300 hover:scale-125"
-            />
-          </a>
-        </div>
-        <div class="flex gap-10">
-          <a
-            href="#"
-            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
-            >A propos</a
-          >
-          <a
-            href="#"
-            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
-            >Projets</a
-          >
-          <a
-            href="#"
-            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
-            >Blog</a
-          >
-        </div>
-        <div class="flex items-center justify-around">
-          <div class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover">
-            <i
-              class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 shadow-light-pressed transition-shadow duration-300 hover:shadow-light-default"
-            ></i>
-            <i
-              class="fa-solid fa-moon h-8 w-8 rounded-full bg-red-pink-100 p-2 opacity-0"
-            ></i>
-          </div>
-          <div>
-            <a
-              href="#"
-              class="ml-5 h-full rounded-e-full bg-red-pink-50 px-4 py-7 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
-              >Me contacter</a
-            >
-          </div>
-        </div>
-      </header>
+      </div>
+    </header>
 
-      <main></main>
-      <footer></footer>
-    </div>
+    <main></main>
+    <footer></footer>
+
+    <script src="src/js/script.js"></script>
   </body>
 </html>
