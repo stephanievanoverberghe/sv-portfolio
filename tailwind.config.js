@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.{html, js, jsx}",
     "./*.{html, js, jsx}"
   ],
-  darkMode: 'class',
+  darkMode: 'selector',
   theme: {
     // A l'extérieur, ça remplace les fonctionnalités se trouvant dans le thème tailwind
     extend: {
