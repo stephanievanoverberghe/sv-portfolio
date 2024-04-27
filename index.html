@@ -27,34 +27,36 @@
     <div>
       <!-- HEADER MOBILE -->
       <header
-        class="fixed bottom-0 flex w-full items-center justify-around bg-red-pink-50 p-3.5 text-red-pink-700 sm:hidden"
+        class="fixed bottom-0 flex w-full items-center justify-around bg-red-pink-100 p-3.5 text-red-pink-700 sm:hidden"
       >
         <div class="flex flex-col items-center justify-center">
-          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+          <button
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+          >
             <i class="fa-solid fa-house fa-lg"></i>
-          </div>
+          </button>
           <span class="pt-2 font-Patua">Accueil</span>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+          <button
+            class="flex h-12 w-12 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+          >
             <i class="fa-solid fa-ellipsis fa-2xl"></i>
-          </div>
+          </button>
           <span class="pt-2 font-Patua">Menu</span>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <div class="shadow-light-default rounded-full bg-red-pink-50 p-3">
+          <button
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default"
+          >
             <i class="fa-solid fa-sun fa-lg"></i>
-          </div>
+          </button>
           <span class="pt-2 font-Patua">Light</span>
         </div>
       </header>
       <!-- HEADER TABLET -->
       <header
         class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 sm:flex sm:items-center sm:justify-between sm:rounded-full lg:hidden"
-      ></header>
-      <!-- HEADER DESKTOP -->
-      <header
-        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 lg:flex lg:items-center lg:justify-between lg:rounded-full"
       >
         <div class="px-10 py-5">
           <a href="/" title="Accueil">
@@ -65,27 +67,54 @@
             />
           </a>
         </div>
+        <div class="flex items-center justify-center">
+          <div class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover">
+            <i
+              class="fa-solid fa-sun h-8 w-8 rounded-full bg-red-pink-100 p-2 shadow-light-pressed"
+            ></i>
+            <i
+              class="fa-solid fa-moon h-8 w-8 rounded-full bg-red-pink-100 p-2 opacity-0"
+            ></i>
+          </div>
+          <div class="p-10">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER DESKTOP -->
+      <header
+        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua text-red-pink-700 lg:flex lg:items-center lg:justify-between lg:rounded-full"
+      >
+        <div class="px-10 py-5">
+          <a href="/" title="Accueil">
+            <img
+              src="src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="h-12 cursor-pointer transition-transform duration-300 hover:scale-125"
+            />
+          </a>
+        </div>
         <div class="flex gap-10">
           <a
             href="#"
-            class="shadow-light-default hover:shadow-light-pressed rounded-full bg-red-pink-50 px-8 py-3"
+            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
             >A propos</a
           >
           <a
             href="#"
-            class="shadow-light-default hover:shadow-light-pressed rounded-full bg-red-pink-50 px-8 py-3"
+            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
             >Projets</a
           >
           <a
             href="#"
-            class="shadow-light-default hover:shadow-light-pressed rounded-full bg-red-pink-50 px-8 py-3"
+            class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
             >Blog</a
           >
         </div>
         <div class="flex items-center justify-around">
-          <div class="shadow-light-hover rounded-full bg-red-pink-50 px-1 py-1">
+          <div class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover">
             <i
-              class="fa-solid fa-sun shadow-light-pressed hover:shadow-light-default h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2"
+              class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 shadow-light-pressed transition-shadow duration-300 hover:shadow-light-default"
             ></i>
             <i
               class="fa-solid fa-moon h-8 w-8 rounded-full bg-red-pink-100 p-2 opacity-0"
@@ -94,7 +123,7 @@
           <div>
             <a
               href="#"
-              class="shadow-light-default hover:shadow-light-pressed ml-5 h-full rounded-e-full bg-red-pink-50 px-4 py-7"
+              class="ml-5 h-full rounded-e-full bg-red-pink-50 px-4 py-7 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed"
               >Me contacter</a
             >
           </div>
