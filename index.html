@@ -26,7 +26,7 @@
   <body
     class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
   >
-    <header class="flex h-screen flex-col justify-center sm:justify-between">
+    <header class="flex flex-col justify-center sm:h-screen sm:justify-between">
       <!-- HEADER TABLET AND DESKTOP -->
       <div
         class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua sm:flex sm:items-center sm:justify-between sm:rounded-full dark:bg-red-pink-900"
@@ -180,7 +180,21 @@
       </div>
     </header>
 
-    <main class="container mx-auto"></main>
+    <main class="container mx-auto">
+      <section
+        class="my-12 rounded-md p-10 shadow-light-hover dark:shadow-dark-hover"
+      >
+        <iframe
+          class="aspect-video w-full shadow-light-default dark:shadow-dark-default"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
     <footer></footer>
 
     <script src="src/js/script.js"></script>
