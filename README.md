@@ -1,6 +1,6 @@
 # PORTFOLIO - Vanoverberghe Stéphanie - Développeuse Front-End spécialisée en React
 
-![npm version](https://badge.fury.io/js/package-name.svg)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
 
 ## Table des matières
 
