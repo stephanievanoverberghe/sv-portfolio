@@ -197,7 +197,11 @@
       <section
         class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
       >
-        <h2 class="mb-10 font-Patua text-2xl sm:text-4xl">Portfolio</h2>
+        <h2
+          class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+        >
+          Portfolio
+        </h2>
         <div
           class="grid grid-cols-1 grid-rows-3 gap-10 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 xl:grid-cols-4 xl:grid-rows-1"
         >
@@ -320,11 +324,11 @@
         class="mx-5 flex flex-col items-center justify-center py-12 md:block"
       >
         <h2
-          class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-100"
+          class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
         >
           Expertise technique
         </h2>
-        <p>
+        <p class="text-red-pink-950 dark:text-red-pink-50">
           Lorem ipsum dolor sit amet consectetur. Quis in nisl adipiscing
           feugiat nunc phasellus. Ut neque elementum tortor viverra. In nulla
           maecenas ac quis semper. Adipiscing vel elementum tempor suspendisse
@@ -545,8 +549,106 @@
         </div>
       </section>
     </main>
-    <footer></footer>
-
+    <footer
+      class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+    >
+      <div
+        class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <a href="./index.html" title="Accueil">
+            <img
+              src="src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
+            />
+            <img
+              src="src/assets/img/logo-dark.png"
+              alt="Logo du portfolio"
+              class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
+            />
+          </a>
+          <div class="flex">
+            <div
+              class="mr-4 flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+            >
+              <a
+                href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+                target="_blank"
+              >
+                <img
+                  src="src/assets/img/linkedin.png"
+                  alt="Logo Travail d'équipe"
+                  class="w-8"
+                />
+              </a>
+            </div>
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+            >
+              <a
+                href="https://github.com/stephanievanoverberghe"
+                target="_blank"
+              >
+                <img
+                  src="src/assets/img/github.png"
+                  alt="Logo agility"
+                  class="w-8"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden sm:flex sm:flex-col">
+          <span
+            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+            >Liens importants</span
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 dark:text-red-pink-50"
+            >Portfolio</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 dark:text-red-pink-50"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 dark:text-red-pink-50"
+            >Blog</a
+          >
+          <a href="#" class="text-sm text-red-pink-950 dark:text-red-pink-50"
+            >A propos</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
+        >
+          <span
+            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+            >Informations légales</span
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 dark:text-red-pink-50"
+            >Mentions légales</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 dark:text-red-pink-50"
+            >Politique de confidentialité</a
+          >
+          <a href="#" class="text-sm text-red-pink-950 dark:text-red-pink-50"
+            >CGU</a
+          >
+        </div>
+      </div>
+      <p class="mt-10 text-center text-xs">
+        Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
+      </p>
+    </footer>
     <script src="src/js/script.js"></script>
   </body>
 </html>
