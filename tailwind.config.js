@@ -38,6 +38,7 @@ module.exports = {
         'light-hover': 'inset -4px -4px 4px 0 #fff, inset 6px 6px 4px 0 #D4C8CA, -2px -2px 6px 0 #fff, 5px 5px 4px 0 #D4C8CA',
         'light-default': ' -2px -2px 6px 0 #fff, 5px 5px 4px 0 #D4C8CA',
         'light-pressed': 'inset -2px -2px 4px 0 #fff, inset 3px 3px 4px 0 #D4C8CA',
+        'shadow-header': '0 -2px 4px 0 #D4C8CA',
       },
     },
   },
