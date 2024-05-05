@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/33a775bcdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>Porfolio - Projets</title>
+  </head>
+
+  <body
+    class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
+  >
+    <header class="flex flex-col justify-center sm:h-screen sm:justify-between">
+      <!-- HEADER TABLET AND DESKTOP -->
+      <div
+        class="mx-10 my-6 hidden h-20 bg-red-pink-100 font-Patua sm:flex sm:items-center sm:justify-between sm:rounded-full dark:bg-red-pink-900"
+      >
+        <div class="px-10 py-5">
+          <a href="../index.html" title="Accueil">
+            <img
+              src="../src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="h-14 transition-transform hover:scale-125 dark:hidden"
+            />
+            <img
+              src="../src/assets/img/logo-dark.png"
+              alt="Logo du portfolio"
+              class="hidden h-14 transition-transform hover:scale-125 dark:block"
+            />
+          </a>
+        </div>
+        <div class="hidden lg:block">
+          <div class="flex gap-10">
+            <a
+              href="#"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >A propos</a
+            >
+            <a
+              href="../pages/projects.html"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Projets</a
+            >
+            <a
+              href="#"
+              class="rounded-full bg-red-pink-50 px-8 py-3 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Blog</a
+            >
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <div
+            class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
+          >
+            <i
+              class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-100 shadow-light-pressed transition-shadow duration-300 hover:shadow-light-default dark:opacity-0"
+              id="light"
+            ></i>
+            <i
+              class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:bg-red-pink-900 dark:opacity-100"
+              id="dark"
+            ></i>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="ml-5 hidden h-full rounded-e-full bg-red-pink-50 px-4 py-7 shadow-light-default transition-shadow duration-300 hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >Me contacter</a
+            >
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="mx-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+            >
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER MOBILE -->
+      <div
+        class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-slate-300 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <button
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+          >
+            <i class="fa-solid fa-house"></i>
+          </button>
+          <span class="pt-2 font-Patua text-xs">Accueil</span>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <button
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+          >
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
+          <span class="pt-2 font-Patua text-xs">Menu</span>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <button
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+          >
+            <i class="fa-solid fa-sun dark:hidden" id="light-mobile"></i>
+            <i
+              class="fa-solid fa-moon fa-lg hidden dark:block"
+              id="dark-mobile"
+            ></i>
+          </button>
+          <span class="pt-2 font-Patua text-xs dark:hidden">Light</span>
+          <span class="hidden pt-2 font-Patua text-xs dark:block">Dark</span>
+        </div>
+      </div>
+      <!-- SECTION HERO -->
+      <div
+        class="container mx-auto flex items-center justify-center sm:px-10 md:block"
+      >
+        <div
+          class="grid grid-cols-1 p-3 sm:my-10 sm:grid-rows-2 sm:p-0 md:grid-cols-2 md:grid-rows-1"
+        >
+          <div class="flex flex-col justify-center md:justify-between"></div>
+        </div>
+      </div>
+      <div></div>
+    </header>
+
+    <main class="container mx-auto"></main>
+    <footer
+      class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+    >
+      <div
+        class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <a href="../index.html" title="Accueil">
+            <img
+              src="../src/assets/img/logo-light.png"
+              alt="Logo du portfolio"
+              class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
+            />
+            <img
+              src="../src/assets/img/logo-dark.png"
+              alt="Logo du portfolio"
+              class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
+            />
+          </a>
+          <div class="flex">
+            <div
+              class="mr-4 flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+            >
+              <a
+                href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+                target="_blank"
+              >
+                <img
+                  src="../src/assets/img/linkedin.png"
+                  alt="Logo Travail d'équipe"
+                  class="w-8"
+                />
+              </a>
+            </div>
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+            >
+              <a
+                href="https://github.com/stephanievanoverberghe"
+                target="_blank"
+              >
+                <img
+                  src="../src/assets/img/github.png"
+                  alt="Logo agility"
+                  class="w-8"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
+        >
+          <span
+            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+            >Liens importants</span
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >Portfolio</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >A propos</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
+        >
+          <span
+            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+            >Informations légales</span
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >Mentions légales</a
+          >
+          <a
+            href="#"
+            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >Politique de confidentialité</a
+          >
+          <a
+            href="#"
+            class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+            >CGU</a
+          >
+        </div>
+      </div>
+      <p class="mt-10 text-center text-xs">
+        Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
+      </p>
+    </footer>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

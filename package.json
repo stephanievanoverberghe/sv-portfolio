@@ -8,7 +8,7 @@
     "build": "tailwindcss -o ./src/output.css --minify"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vanoverberghe Stéphanie",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^3.2.5",
