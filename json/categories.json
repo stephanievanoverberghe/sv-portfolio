@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Développement web",
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Front-end",
+          "description": "Projets où j'ai travaillé sur l'interface utilisateur, en utilisant des technologies comme HTML, CSS, JavaScript ou React."
+        },
+        {
+          "id": 2,
+          "name": "Back-end",
+          "description": "Projets mettant en lumière mes compétences en programmation serveur, bases de données et gestion d'API, utilisant des technologies comme Node.js, Python ou PHP."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "UX/UI design",
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Design d'interface",
+          "description": "Projets mettant en avant la conception d'interfaces utilisateur intuitives et attrayante visuellement."
+        },
+        {
+          "id": 2,
+          "name": "Expérience utilisateur",
+          "description": "Projets où j'ai amélioré l'expérience utilisateur en optimisant la navigation du site."
+        },
+        {
+          "id": 3,
+          "name": "Wireframing et prototypage",
+          "description": "Exemple de ma capacité à transformer des concepts en visuels interactifs."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "E-commerce",
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Développement de boutiques en ligne",
+          "description": "Projets impliquant la création de plateformes e-commerce, y compris l'intégration de systèmes de paiement et la gestion de catalogues produits."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "E-learning",
+      "subcategories": [
+        {
+          "id": 1,
+          "name": "Développement de plateformes d'apprentissage",
+          "description": "Projets impliquant la création de plateformes d'apprentissage."
+        }
+      ]
+    }
+  ]
+}

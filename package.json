@@ -11,6 +11,7 @@
   "author": "Vanoverberghe Stéphanie",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "tailwindcss": "^3.4.1"
