@@ -1432,6 +1432,11 @@ select {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-pink-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 228 231 / var(--tw-bg-opacity));
+}
+
 .hover\:text-red-pink-950:hover {
   --tw-text-opacity: 1;
   color: rgb(77 4 28 / var(--tw-text-opacity));
