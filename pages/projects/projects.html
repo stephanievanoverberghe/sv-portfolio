@@ -27,7 +27,7 @@
     class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
   >
     <div
-      class="flex h-screen flex-col justify-center bg-red-pink-50 md:justify-between dark:bg-red-pink-950"
+      class="grid grid-rows-1 bg-red-pink-50 pt-10 sm:h-screen sm:grid-rows-[100px_auto] sm:pt-0 dark:bg-red-pink-950"
     >
       <!-- HEADER DESKTOP AND TABLETTE -->
       <header
@@ -98,11 +98,12 @@
         class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
       >
         <div class="flex flex-col items-center justify-center">
-          <button
+          <a
+            href="../../index.html"
             class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
           >
             <i class="fa-solid fa-house"></i>
-          </button>
+          </a>
           <span class="pt-2 font-Patua text-xs">Accueil</span>
         </div>
         <div class="flex flex-col items-center justify-center">
@@ -128,35 +129,37 @@
         </div>
       </header>
       <!-- SECTION HERO -->
-      <div
-        class="container mx-auto flex flex-col items-center justify-center sm:px-10"
-      >
-        <h1
-          class="text-center font-Patua text-4xl text-red-pink-700 sm:text-5xl md:text-start lg:text-6xl xl:text-7xl dark:text-red-pink-300"
-        >
-          Explorez mes créations
-        </h1>
-        <span
-          class="my-5 text-center text-base tracking-[0.3em] text-red-pink-900 sm:text-lg md:my-10 lg:text-xl xl:text-2xl dark:text-red-pink-50"
-        >
-          Voici une vitrine de mes projets les plus significatifs. Chaque projet
-          illustre ma passion et mon engagement pour le développement web.
-        </span>
-      </div>
-      <div class="my-5 flex w-28 snap-x">
-        <div class="w-full snap-center object-cover">
-          <img src="../../src/assets/img/project-slide-1.jpg" alt="" />
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center">
+          <h1
+            class="text-center font-Patua text-4xl text-red-pink-700 sm:text-5xl md:text-start lg:text-6xl xl:text-7xl dark:text-red-pink-300"
+          >
+            Explorez mes créations
+          </h1>
+          <span
+            class="my-5 px-5 text-center text-base tracking-[0.3em] text-red-pink-900 sm:px-0 sm:text-lg md:my-10 lg:text-xl xl:text-2xl dark:text-red-pink-50"
+          >
+            Voici une vitrine de mes projets les plus significatifs. Chaque
+            projet illustre ma passion et mon engagement pour le développement
+            web.
+          </span>
         </div>
-        <div class="w-full snap-center object-cover">
-          <img src="../../src/assets/img/project-slide-2.jpg" alt="" />
-        </div>
-        <div class="w-full snap-center object-cover">
-          <img src="../../src/assets/img/project-slide-3.jpg" alt="" />
+
+        <div class="flex snap-x overflow-hidden sm:h-[300px] md:h-[500px]">
+          <div class="w-full snap-center object-cover">
+            <img src="../../src/assets/img/project-slide-1.jpg" alt="" />
+          </div>
+          <div class="hidden w-full snap-center object-cover">
+            <img src="../../src/assets/img/project-slide-2.jpg" alt="" />
+          </div>
+          <div class="hidden w-full snap-center object-cover">
+            <img src="../../src/assets/img/project-slide-3.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
 
-    <main class="container mx-auto">
+    <main class="">
       <!-- <section class="mx-5 my-12">
         <h2
           class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
@@ -214,39 +217,30 @@
           </div>
         </div>
       </section> -->
-      <section class="mx-5 my-12 flex justify-around">
-        <form class="flex flex-col">
+      <section
+        class="mx-5 my-12 grid lg:grid-cols-[200px_auto] lg:gap-24 xl:grid-cols-[400px_auto]"
+      >
+        <form class="flex flex-col lg:items-start xl:items-center">
           <h2
-            class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+            class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
           >
             Filtres
           </h2>
-          <div>
-            <h3
-              class="mb-4 font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-            >
-              Catégories
-            </h3>
-            <div class="mb-10 flex flex-col">
-              <span>Développement web</span>
-              <span>UI/UX design</span>
-              <span>E-commerce</span>
-              <span>E-learning</span>
-            </div>
-          </div>
-        </form>
-        <div class="flex flex-col">
-          <div class="mb-10 flex gap-5">
+          <div
+            class="mb-10 flex flex-col gap-5 sm:grid sm:grid-cols-3 lg:grid-cols-1"
+          >
             <div>
-              <label for="sort"></label>
+              <label for="categories"></label>
               <select
-                name="sort"
-                id="sort"
-                class="block w-full border-none p-2.5 text-sm dark:bg-red-pink-900"
+                name="categories"
+                id="categories"
+                class="block w-full cursor-pointer border-none bg-red-pink-100 p-2.5 text-sm font-bold text-red-pink-50 shadow-light-default ring-0 hover:shadow-light-pressed focus:ring-0 lg:w-52 dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
               >
-                <option value="">--Tri--</option>
-                <option value="">Le plus récent</option>
-                <option value="">Le plus ancien</option>
+                <option value="">-- Catégories --</option>
+                <option value="">Développement web</option>
+                <option value="">UI/UX design</option>
+                <option value="">E-commerce</option>
+                <option value="">E-learning</option>
               </select>
             </div>
             <div class="">
@@ -254,126 +248,192 @@
               <select
                 name="languages"
                 id="languages"
-                class="block w-full border-none p-2.5 text-sm dark:bg-red-pink-900"
+                class="block w-full cursor-pointer border-none bg-red-pink-100 p-2.5 text-sm font-bold text-red-pink-50 shadow-light-default ring-0 hover:shadow-light-pressed focus:ring-0 lg:w-52 dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
               >
-                <option value="">--Langages--</option>
+                <option value="">-- Langages --</option>
                 <option value="">Tailwind</option>
                 <option value="">Bootstrap</option>
                 <option value="">JavaScript</option>
                 <option value="">React</option>
               </select>
             </div>
+            <div>
+              <label for="sort"></label>
+              <select
+                name="sort"
+                id="sort"
+                class="block w-full cursor-pointer border-none bg-red-pink-100 p-2.5 text-sm font-bold text-red-pink-50 shadow-light-default ring-0 hover:shadow-light-pressed focus:ring-0 lg:w-52 dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+              >
+                <option value="">-- Tri --</option>
+                <option value="">Le plus récent</option>
+                <option value="">Le plus ancien</option>
+              </select>
+            </div>
           </div>
+        </form>
+        <div class="flex flex-col items-center justify-center">
           <div>
-            <div class="flex gap-6">
-              <a href="#">
+            <h2
+              class="text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+            >
+              Développement web
+            </h2>
+            <p class="my-10">
+              Projets où j'ai travaillé sur l'interface utilisateur, en
+              utilisant des technologies comme HTML, CSS, JavaScript ou React.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-6 md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+          >
+            <a href="#">
+              <div
+                class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+              >
+                <img
+                  src="../../src/assets/img/cards.jpg"
+                  alt="Photo de la page d'accueil du site web"
+                  class="rounded-tl-md rounded-tr-md"
+                />
                 <div
-                  class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                  class="mx-7 mt-7 flex flex-col items-center justify-center"
                 >
-                  <img
-                    src="../../src/assets/img/cards.jpg"
-                    alt="Photo de la page d'accueil du site web"
-                    class="rounded-tl-md rounded-tr-md"
-                  />
-                  <div
-                    class="mx-7 mt-7 flex flex-col items-center justify-center"
+                  <h3
+                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
                   >
-                    <h3
-                      class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-                    >
-                      Titre du projet
-                    </h3>
-                    <p class="my-5 text-center text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Ipsum magna
-                      molestie sed ac id id. Urna eu sed a a mauris vulputate in
-                      ut.
-                    </p>
-                  </div>
-                  <div class="flex cursor-pointer justify-end">
-                    <i
-                      class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                    ></i>
-                  </div>
+                    Titre du projet
+                  </h3>
+                  <p class="my-5 text-center text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                    sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                  </p>
                 </div>
-              </a>
-              <a href="#">
+                <div class="flex cursor-pointer justify-end">
+                  <i
+                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+              >
+                <img
+                  src="../../src/assets/img/cards.jpg"
+                  alt="Photo de la page d'accueil du site web"
+                  class="rounded-tl-md rounded-tr-md"
+                />
                 <div
-                  class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                  class="mx-7 mt-7 flex flex-col items-center justify-center"
                 >
-                  <img
-                    src="../../src/assets/img/cards.jpg"
-                    alt="Photo de la page d'accueil du site web"
-                    class="rounded-tl-md rounded-tr-md"
-                  />
-                  <div
-                    class="mx-7 mt-7 flex flex-col items-center justify-center"
+                  <h3
+                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
                   >
-                    <h3
-                      class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-                    >
-                      Titre du projet
-                    </h3>
-                    <p class="my-5 text-center text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Ipsum magna
-                      molestie sed ac id id. Urna eu sed a a mauris vulputate in
-                      ut.
-                    </p>
-                  </div>
-                  <div class="flex cursor-pointer justify-end">
-                    <i
-                      class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                    ></i>
-                  </div>
+                    Titre du projet
+                  </h3>
+                  <p class="my-5 text-center text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                    sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                  </p>
                 </div>
-              </a>
-              <a href="#">
+                <div class="flex cursor-pointer justify-end">
+                  <i
+                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+              >
+                <img
+                  src="../../src/assets/img/cards.jpg"
+                  alt="Photo de la page d'accueil du site web"
+                  class="rounded-tl-md rounded-tr-md"
+                />
                 <div
-                  class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                  class="mx-7 mt-7 flex flex-col items-center justify-center"
                 >
-                  <img
-                    src="../../src/assets/img/cards.jpg"
-                    alt="Photo de la page d'accueil du site web"
-                    class="rounded-tl-md rounded-tr-md"
-                  />
-                  <div
-                    class="mx-7 mt-7 flex flex-col items-center justify-center"
+                  <h3
+                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
                   >
-                    <h3
-                      class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-                    >
-                      Titre du projet
-                    </h3>
-                    <p class="my-5 text-center text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Ipsum magna
-                      molestie sed ac id id. Urna eu sed a a mauris vulputate in
-                      ut.
-                    </p>
-                  </div>
-                  <div class="flex cursor-pointer justify-end">
-                    <i
-                      class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                    ></i>
-                  </div>
+                    Titre du projet
+                  </h3>
+                  <p class="my-5 text-center text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                    sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                  </p>
                 </div>
-              </a>
-            </div>
-            <div class="my-12 flex justify-center gap-5">
-              <a href="#">
-                <i class="fa-solid fa-chevron-left"></i>
-              </a>
-              <a href="#">
-                <span>1</span>
-              </a>
-              <a href="#">
-                <span>2</span>
-              </a>
-              <a href="#">
-                <span>3</span>
-              </a>
-              <a href="#">
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-            </div>
+                <div class="flex cursor-pointer justify-end">
+                  <i
+                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                  ></i>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="xl:hidden 2xl:block">
+              <div
+                class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+              >
+                <img
+                  src="../../src/assets/img/cards.jpg"
+                  alt="Photo de la page d'accueil du site web"
+                  class="rounded-tl-md rounded-tr-md"
+                />
+                <div
+                  class="mx-7 mt-7 flex flex-col items-center justify-center"
+                >
+                  <h3
+                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                  >
+                    Titre du projet
+                  </h3>
+                  <p class="my-5 text-center text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                    sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                  </p>
+                </div>
+                <div class="flex cursor-pointer justify-end">
+                  <i
+                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                  ></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="my-12 flex justify-center gap-5">
+            <a
+              href="#"
+              class="flex h-8 w-8 items-center justify-center rounded-full shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <a
+              href="#"
+              class="flex h-8 w-8 items-center justify-center rounded-lg shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            >
+              <span>1</span>
+            </a>
+            <a
+              href="#"
+              class="flex h-8 w-8 items-center justify-center rounded-lg shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            >
+              <span>2</span>
+            </a>
+            <a
+              href="#"
+              class="flex h-8 w-8 items-center justify-center rounded-lg shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            >
+              <span>3</span>
+            </a>
+            <a
+              href="#"
+              class="flex h-8 w-8 items-center justify-center rounded-full shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
           </div>
         </div>
       </section>
