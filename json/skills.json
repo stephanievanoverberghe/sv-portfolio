@@ -1,0 +1,129 @@
+{
+  "skills": {
+    "front-end": [
+      {
+        "id": 1,
+        "name": "HTML",
+        "level": "Expert",
+        "icon": ""
+      },
+      {
+        "id": 2,
+        "name": "CSS",
+        "level": "Expert",
+        "icon": ""
+      },
+      {
+        "id": 3,
+        "name": "Sass",
+        "level": "Avancé",
+        "icon": ""
+      },
+      {
+        "id": 4,
+        "name": "Tailwind CSS",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 5,
+        "name": "Bootstrap",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 6,
+        "name": "JavaScript",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 7,
+        "name": "React",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 8,
+        "name": "Redux",
+        "level": "Intermédiaire",
+        "icon": ""
+      }
+    ],
+    "UX/UI design": [
+      {
+        "id": 1,
+        "name": "Figma",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 2,
+        "name": "Adobe XD",
+        "level": "Avancé",
+        "icon": ""
+      },
+      {
+        "id": 3,
+        "name": "Photoshop",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 4,
+        "name": "Illustrator",
+        "level": "Intermédiaire",
+        "icon": ""
+      },
+      {
+        "id": 3,
+        "name": "Canva",
+        "level": "Intermédiaire",
+        "icon": ""
+      }
+    ],
+    "Tools": [
+      {
+        "id": 1,
+        "name": "Git",
+        "level": "Avancé",
+        "icon": ""
+      },
+      {
+        "id": 2,
+        "name": "Vite",
+        "level": "Avancé",
+        "icon": ""
+      },
+      {
+        "id": 3,
+        "name": "VS Code",
+        "level": "Avancé",
+        "icon": ""
+      },
+      {
+        "id": 4,
+        "name": "Github",
+        "level": "Avancé",
+        "icon": ""
+      }
+    ],
+    "softSkills": [
+      {
+        "id": 1,
+        "name": "Gestion de projet",
+        "icon": ""
+      },
+      {
+        "id": 2,
+        "name": "Travail en équipe",
+        "icon": ""
+      },
+      {
+        "id": 3,
+        "name": "Anglais",
+        "icon": ""
+      }
+    ]
+  }
+}

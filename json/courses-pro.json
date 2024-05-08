@@ -1,0 +1,94 @@
+{
+  "professional": [
+    {
+      "id": 1,
+      "name": "CDA Front-End JavaScript React",
+      "entreprise": "OpenclassRooms",
+      "start": "2024",
+      "end": "2025",
+      "responsabilities": [
+        {
+          "id": 1,
+          "languages": "Maîtrise des langages HTML, CSS, SASS, Bootstrap, JavaScript, React."
+        },
+        {
+          "id": 2,
+          "others": "Responsive design, Écrire des tests unitaires, intéragir et modéliser une API."
+        }
+      ],
+      "realisations": "Réalisation de 11 projets en situation d'entreprise."
+    },
+    {
+      "id": 2,
+      "name": "Développeur Web et Web Mobile",
+      "entreprise": "La Manu - Amiens",
+      "start": "2022",
+      "end": "2023",
+      "responsabilities": [
+        {
+          "id": 1,
+          "languages": "Languages HTML, CSS, Bootstrap, JavaScript, PHP, SQL, Merise, Wordpress."
+        },
+        {
+          "id": 2,
+          "others": "Maquettage, UX design, Responsive design, SEO, stage de 40h en entreprise."
+        }
+      ],
+      "realisations": "Conception d'une plateforme E-learning en lien avec l'apprentissage du dessin."
+    },
+    {
+      "id": 3,
+      "name": "Gestionnaire de stocks",
+      "entreprise": "Laboratoire Bioamiens - Amiens",
+      "start": "2019",
+      "end": "2021",
+      "responsabilities": [
+        {
+          "id": 1,
+          "languages": "Utilisation du logiciel Kalilab."
+        },
+        {
+          "id": 2,
+          "others": "Réceptionner, stocker et gérer les produits pour les techniciens et infirmières."
+        }
+      ],
+      "realisations": "Commander les produits. Vérifier la conformiter des produits. Faire la réappro."
+    },
+    {
+      "id": 4,
+      "name": "Saisonnière polyvalente",
+      "entreprise": "Club Med et divers hôtels**** indépendants - Les Alpes",
+      "start": "2013",
+      "end": "2018",
+      "responsabilities": [
+        {
+          "id": 1,
+          "languages": "Rapidité, efficacité, esprit d'équipe, organisé, discrétion."
+        },
+        {
+          "id": 2,
+          "others": "Gérer une équipe. Entretenir les chambres. Gestion des plannings."
+        }
+      ],
+      "realisations": "Changer les draps. Faire les lits. Reaprovisionner les chambres en produits consommables. Effectuer ménage complet."
+    },
+    {
+      "id": 4,
+      "name": "Femme de chambre",
+      "entreprise": "Intérimaire - Belgique",
+      "start": "2005",
+      "end": "2013",
+      "responsabilities": [
+        {
+          "id": 1,
+          "languages": "Rapidité, efficacité, esprit d'équipe, organisé, discrétion."
+        },
+        {
+          "id": 2,
+          "others": "Gérer une équipe. Entretenir les chambres. Gestion des plannings."
+        }
+      ],
+      "realisations": "Changer les draps. Faire les lits. Reaprovisionner les chambres en produits consommables. Effectuer ménage complet."
+    }
+  ]
+}

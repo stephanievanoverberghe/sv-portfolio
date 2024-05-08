@@ -6,7 +6,7 @@ module.exports = {
     "./src/**/*.{html, js, jsx}",
     "./*.{html, js, jsx}",
     "./pages/**/*.{html, js, jsx}",
-    "./pages/*.html"
+    "./pages/*.{html, js, jsx}"
   ],
   darkMode: 'selector',
   theme: {
