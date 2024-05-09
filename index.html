@@ -104,7 +104,6 @@
           >
             <i class="fa-solid fa-house"></i>
           </a>
-          <span class="pt-2 font-Patua text-xs">Accueil</span>
         </div>
         <div class="flex flex-col items-center justify-center">
           <button
@@ -112,7 +111,6 @@
           >
             <i class="fa-solid fa-ellipsis"></i>
           </button>
-          <span class="pt-2 font-Patua text-xs">Menu</span>
         </div>
         <div class="flex flex-col items-center justify-center">
           <button
@@ -124,8 +122,6 @@
               id="dark-mobile"
             ></i>
           </button>
-          <span class="pt-2 font-Patua text-xs dark:hidden">Light</span>
-          <span class="hidden pt-2 font-Patua text-xs dark:block">Dark</span>
         </div>
       </header>
       <!-- SECTION HERO -->
@@ -322,232 +318,129 @@
         </a>
       </section>
       <section
-        class="mx-5 flex flex-col items-center justify-center py-12 md:block"
+        class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
       >
         <h2
-          class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+          class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
         >
-          Expertise technique
+          Blog
         </h2>
-        <p class="text-red-pink-950 dark:text-red-pink-50">
-          Lorem ipsum dolor sit amet consectetur. Quis in nisl adipiscing
-          feugiat nunc phasellus. Ut neque elementum tortor viverra. In nulla
-          maecenas ac quis semper. Adipiscing vel elementum tempor suspendisse
-          quis convallis vulputate. Tincidunt congue duis senectus condimentum
-          etiam sem volutpat. Sodales nunc posuere turpis tincidunt.
-        </p>
-        <div
-          class="mt-12 grid grid-cols-1 gap-y-12 md:grid-cols-1 md:grid-rows-4 md:gap-x-14 lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-48"
-        >
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">
-              Développement Front-end
-            </h3>
+        <div class="grid gap-10 md:grid-cols-1 lg:grid-cols-2">
+          <a href="#">
             <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
             >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/sass.png"
-                  alt="Logo préprocessor Sass"
-                  class="w-12"
-                />
+              <img
+                src="src/assets/img/cards.jpg"
+                alt="Photo de la page d'accueil du site web"
+                class="rounded-l-md object-cover md:w-[150px]"
+              />
+              <div class="flex flex-col p-5">
+                <h3
+                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                >
+                  Titre de l'article
+                </h3>
+                <p class="my-5 text-center text-sm sm:text-base md:text-start">
+                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                </p>
               </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/tailwind.png"
-                  alt="Logo framework TailwindCSS"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/bootstrap.png"
-                  alt="Logo framework Bootstrap"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/javascript.png"
-                  alt="Logo JavaScript"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/typescript.png"
-                  alt="Logo Typescript"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/react.png"
-                  alt="Logo framework React"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/next.png"
-                  alt="Logo Next.js"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/redux.png"
-                  alt="Logo bibliothèque Javascript: Redux"
-                  class="w-12"
-                />
+              <div class="flex cursor-pointer justify-end md:hidden">
+                <i
+                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                ></i>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">Design UI/UX</h3>
+          </a>
+          <a href="#">
             <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
             >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/figma.png"
-                  alt="Logo Figma"
-                  class="w-12"
-                />
+              <img
+                src="src/assets/img/cards.jpg"
+                alt="Photo de la page d'accueil du site web"
+                class="rounded-l-md object-cover md:w-[150px]"
+              />
+              <div class="flex flex-col p-5">
+                <h3
+                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                >
+                  Titre de l'article
+                </h3>
+                <p class="my-5 text-center text-sm sm:text-base md:text-start">
+                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                </p>
               </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/xd.png"
-                  alt="Logo Adobe XD"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/illustrator.png"
-                  alt="Logo Adobe Illustrator"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/photoshop.png"
-                  alt="Logo Adobe Photoshop"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/premiere-pro.png"
-                  alt="Logo Adobe Premiere Pro"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/canva.png"
-                  alt="Logo Canva"
-                  class="w-12"
-                />
+              <div class="flex cursor-pointer justify-end md:hidden">
+                <i
+                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                ></i>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">Outils</h3>
+          </a>
+          <a href="#">
             <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
             >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img src="src/assets/img/git.png" alt="Logo Git" class="w-12" />
+              <img
+                src="src/assets/img/cards.jpg"
+                alt="Photo de la page d'accueil du site web"
+                class="rounded-l-md object-cover md:w-[150px]"
+              />
+              <div class="flex flex-col p-5">
+                <h3
+                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                >
+                  Titre de l'article
+                </h3>
+                <p class="my-5 text-center text-sm sm:text-base md:text-start">
+                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                </p>
               </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/github.png"
-                  alt="Logo GitHub"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/vite.png"
-                  alt="Logo Vite"
-                  class="w-12"
-                />
+              <div class="flex cursor-pointer justify-end md:hidden">
+                <i
+                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                ></i>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">
-              Compétences transversales
-            </h3>
+          </a>
+          <a href="#">
             <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
             >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/english.png"
-                  alt="Logo drapeau anglais"
-                  class="w-12"
-                />
+              <img
+                src="src/assets/img/cards.jpg"
+                alt="Photo de la page d'accueil du site web"
+                class="rounded-l-md object-cover md:w-[150px]"
+              />
+              <div class="flex flex-col p-5">
+                <h3
+                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                >
+                  Titre de l'article
+                </h3>
+                <p class="my-5 text-center text-sm sm:text-base md:text-start">
+                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
+                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
+                </p>
               </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/team-work.png"
-                  alt="Logo Travail d'équipe"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="src/assets/img/agility.png"
-                  alt="Logo agility"
-                  class="w-12"
-                />
+              <div class="flex cursor-pointer justify-end md:hidden">
+                <i
+                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                ></i>
               </div>
             </div>
-          </div>
+          </a>
         </div>
+        <a
+          href="pages/blog/blog.html"
+          class="mt-12 rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+        >
+          Découvrir mon blog
+        </a>
       </section>
     </main>
     <footer
