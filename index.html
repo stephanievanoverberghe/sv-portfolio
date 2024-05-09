@@ -1,555 +1,604 @@
 <!doctype html>
 <html lang="fr" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/33a775bcdb.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./src/output.css" />
-    <title>Vanoverberghe Stéphanie - Portfolio</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/33a775bcdb.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./src/output.css" />
+        <title>Vanoverberghe Stéphanie - Portfolio</title>
+    </head>
 
-  <body
-    class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
-  >
-    <div
-      class="grid h-screen grid-cols-1 grid-rows-1 bg-red-pink-50 sm:grid-rows-[100px_auto_100px] dark:bg-red-pink-950"
+    <body
+        class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
     >
-      <!-- HEADER DESKTOP AND TABLETTE -->
-      <header
-        class="hidden items-center justify-between rounded-full bg-red-pink-100 sm:m-4 sm:flex dark:bg-red-pink-900"
-      >
-        <div class="cursor-pointer">
-          <a href="./index.html" title="Accueil">
-            <img
-              src="src/assets/img/logo-light.png"
-              alt="Logo du portfolio"
-              class="ml-6 h-14 dark:hidden"
-            />
-            <img
-              src="src/assets/img/logo-dark.png"
-              alt="Logo du portfolio"
-              class="ml-6 hidden h-14 dark:block"
-            />
-          </a>
-        </div>
-        <nav class="hidden lg:block">
-          <ul class="flex items-center gap-6">
-            <li
-              class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-            >
-              <a href="pages/about.html">A propos</a>
-            </li>
-            <li
-              class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-            >
-              <a href="pages/projects/projects.html">Projets</a>
-            </li>
-            <li
-              class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-            >
-              <a href="pages/blog/blog.html">Blog</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="flex items-center gap-6">
-          <div
-            class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
-          >
-            <i
-              class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-100 shadow-light-pressed hover:shadow-light-default dark:opacity-0"
-              id="light"
-            ></i>
-            <i
-              class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:bg-red-pink-900 dark:opacity-100"
-              id="dark"
-            ></i>
-          </div>
-          <div class="block lg:hidden">
-            <button
-              class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-            >
-              <i class="fa-solid fa-bars fa-xl"></i>
-            </button>
-          </div>
-          <a
-            href="pages/contact.html"
-            class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-            >Me contacter</a
-          >
-        </div>
-      </header>
-      <!-- HEADER MOBILE -->
-      <header
-        class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
-      >
-        <div class="flex flex-col items-center justify-center">
-          <a
-            href="index.html"
-            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
-          >
-            <i class="fa-solid fa-house"></i>
-          </a>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <button
-            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
-          >
-            <i class="fa-solid fa-ellipsis"></i>
-          </button>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <button
-            class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
-          >
-            <i class="fa-solid fa-sun dark:hidden" id="light-mobile"></i>
-            <i
-              class="fa-solid fa-moon fa-lg hidden dark:block"
-              id="dark-mobile"
-            ></i>
-          </button>
-        </div>
-      </header>
-      <!-- SECTION HERO -->
-      <div class="container mx-auto flex items-center justify-center sm:px-10">
         <div
-          class="grid grid-cols-1 p-3 sm:my-10 sm:grid-rows-2 sm:p-0 md:grid-cols-2 md:grid-rows-1"
+            class="grid h-screen grid-cols-1 grid-rows-1 bg-red-pink-50 sm:grid-rows-[100px_auto_100px] dark:bg-red-pink-950"
         >
-          <div class="flex flex-col justify-center md:justify-between">
-            <div class="flex flex-col items-center justify-center md:block">
-              <h1
-                class="mb-4 text-center font-Patua text-4xl text-red-pink-700 sm:text-5xl md:text-start lg:text-6xl xl:text-7xl dark:text-red-pink-300"
-              >
-                Développeuse Front-End
-              </h1>
-              <span
-                class="text-center text-xl tracking-[0.3em] text-red-pink-900 sm:text-2xl md:text-start lg:text-3xl xl:text-4xl dark:text-red-pink-50"
-                >Spécialisée en React</span
-              >
-            </div>
-            <div class="hidden md:block">
-              <a
-                href="pages/projects/projects.html"
-                class="rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-              >
-                Découvrir mes projets
-              </a>
-            </div>
-          </div>
-          <div
-            class="md:justify-en my-10 flex flex-col items-center justify-center sm:my-0 sm:pb-10 md:items-end md:pb-0"
-          >
-            <img
-              src="src/assets/img/profil.jpg"
-              alt="Photo de Stéphanie Vanoverberghe"
-              class="size-[176px] rounded-full shadow-light-default sm:size-[200px] md:size-[300px] lg:cursor-pointer dark:shadow-dark-default"
-            />
-          </div>
-          <div
-            class="flex flex-col items-center justify-center md:hidden md:items-end md:justify-end"
-          >
-            <button
-              class="rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+            <!-- HEADER DESKTOP AND TABLETTE -->
+            <header
+                class="hidden items-center justify-between rounded-full bg-red-pink-100 sm:m-4 sm:flex dark:bg-red-pink-900"
             >
-              Découvrir mes projets
-            </button>
-          </div>
+                <div class="cursor-pointer">
+                    <a href="./index.html" title="Accueil">
+                        <img
+                            src="src/assets/img/logo-light.png"
+                            alt="Logo du portfolio"
+                            class="ml-6 h-14 dark:hidden"
+                        />
+                        <img
+                            src="src/assets/img/logo-dark.png"
+                            alt="Logo du portfolio"
+                            class="ml-6 hidden h-14 dark:block"
+                        />
+                    </a>
+                </div>
+                <nav class="hidden lg:block">
+                    <ul class="flex items-center gap-6">
+                        <li
+                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a href="pages/about.html">A propos</a>
+                        </li>
+                        <li
+                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a href="pages/projects/projects.html">Projets</a>
+                        </li>
+                        <li
+                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a href="pages/blog/blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center gap-6">
+                    <div
+                        class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
+                    >
+                        <i
+                            class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-100 shadow-light-pressed hover:shadow-light-default dark:opacity-0"
+                            id="light"
+                        ></i>
+                        <i
+                            class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:bg-red-pink-900 dark:opacity-100"
+                            id="dark"
+                        ></i>
+                    </div>
+                    <div class="block lg:hidden">
+                        <button
+                            class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <i class="fa-solid fa-bars fa-xl"></i>
+                        </button>
+                    </div>
+                    <a
+                        href="pages/contact.html"
+                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >Me contacter</a
+                    >
+                </div>
+            </header>
+            <!-- HEADER MOBILE -->
+            <header
+                class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
+            >
+                <div class="flex flex-col items-center justify-center">
+                    <a
+                        href="index.html"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <button
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <button
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <i
+                            class="fa-solid fa-sun dark:hidden"
+                            id="light-mobile"
+                        ></i>
+                        <i
+                            class="fa-solid fa-moon fa-lg hidden dark:block"
+                            id="dark-mobile"
+                        ></i>
+                    </button>
+                </div>
+            </header>
+            <!-- SECTION HERO -->
+            <div
+                class="container mx-auto flex items-center justify-center sm:px-10"
+            >
+                <div
+                    class="grid grid-cols-1 p-3 sm:my-10 sm:grid-rows-2 sm:p-0 md:grid-cols-2 md:grid-rows-1"
+                >
+                    <div
+                        class="flex flex-col justify-center md:justify-between"
+                    >
+                        <div
+                            class="flex flex-col items-center justify-center md:block"
+                        >
+                            <h1
+                                class="mb-4 text-center font-Patua text-4xl text-red-pink-700 sm:text-5xl md:text-start lg:text-6xl xl:text-7xl dark:text-red-pink-300"
+                            >
+                                Développeuse Front-End
+                            </h1>
+                            <span
+                                class="text-center text-xl tracking-[0.3em] text-red-pink-900 sm:text-2xl md:text-start lg:text-3xl xl:text-4xl dark:text-red-pink-50"
+                                >Spécialisée en React</span
+                            >
+                        </div>
+                        <div class="hidden md:block">
+                            <a
+                                href="pages/projects/projects.html"
+                                class="rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                            >
+                                Découvrir mes projets
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="md:justify-en my-10 flex flex-col items-center justify-center sm:my-0 sm:pb-10 md:items-end md:pb-0"
+                    >
+                        <img
+                            src="src/assets/img/profil.jpg"
+                            alt="Photo de Stéphanie Vanoverberghe"
+                            class="size-[176px] rounded-full shadow-light-default sm:size-[200px] md:size-[300px] lg:cursor-pointer dark:shadow-dark-default"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center md:hidden md:items-end md:justify-end"
+                    >
+                        <button
+                            class="rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            Découvrir mes projets
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden items-center justify-center sm:flex">
+                <i
+                    class="fa-regular fa-circle-down animate-bounce rounded-full bg-red-pink-50 p-3 text-4xl shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                ></i>
+            </div>
         </div>
-      </div>
-      <div class="hidden items-center justify-center sm:flex">
-        <i
-          class="fa-regular fa-circle-down animate-bounce rounded-full bg-red-pink-50 p-3 text-4xl shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
-        ></i>
-      </div>
-    </div>
-    <main class="container mx-auto">
-      <section
-        class="mx-5 my-12 rounded-md p-5 shadow-light-hover md:p-10 lg:mx-56 dark:shadow-dark-hover"
-      >
-        <iframe
-          class="aspect-video h-full w-full shadow-light-default dark:shadow-dark-default"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section
-        class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
-      >
-        <h2
-          class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+        <main class="container mx-auto">
+            <section
+                class="mx-5 my-12 rounded-md p-5 shadow-light-hover md:p-10 lg:mx-56 dark:shadow-dark-hover"
+            >
+                <iframe
+                    class="aspect-video h-full w-full shadow-light-default dark:shadow-dark-default"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </section>
+            <section
+                class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
+            >
+                <h2
+                    class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+                >
+                    Portfolio
+                </h2>
+                <div
+                    class="grid grid-cols-1 grid-rows-3 gap-10 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 xl:grid-cols-4 xl:grid-rows-1"
+                >
+                    <a href="#">
+                        <div
+                            class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-tl-md rounded-tr-md"
+                            />
+                            <div
+                                class="mx-7 mt-7 flex flex-col items-center justify-center"
+                            >
+                                <h3
+                                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                                >
+                                    Titre du projet
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div class="flex cursor-pointer justify-end">
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-tl-md rounded-tr-md"
+                            />
+                            <div
+                                class="mx-7 mt-7 flex flex-col items-center justify-center"
+                            >
+                                <h3
+                                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                                >
+                                    Titre du projet
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div class="flex cursor-pointer justify-end">
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-tl-md rounded-tr-md"
+                            />
+                            <div
+                                class="mx-7 mt-7 flex flex-col items-center justify-center"
+                            >
+                                <h3
+                                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                                >
+                                    Titre du projet
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div class="flex cursor-pointer justify-end">
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="hidden md:block lg:hidden xl:block">
+                        <div
+                            class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-tl-md rounded-tr-md"
+                            />
+                            <div
+                                class="mx-7 mt-7 flex flex-col items-center justify-center"
+                            >
+                                <h3
+                                    class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                                >
+                                    Titre du projet
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div class="flex cursor-pointer justify-end">
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a
+                    href="pages/projects/projects.html"
+                    class="mt-12 rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                >
+                    Découvrir mon portfolio
+                </a>
+            </section>
+            <section
+                class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
+            >
+                <h2
+                    class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
+                >
+                    Blog
+                </h2>
+                <div class="grid gap-10 md:grid-cols-1 lg:grid-cols-2">
+                    <a href="#">
+                        <div
+                            class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-l-md object-cover md:w-[150px]"
+                            />
+                            <div class="flex flex-col p-5">
+                                <h3
+                                    class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                                >
+                                    Titre de l'article
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base md:text-start"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div
+                                class="flex cursor-pointer justify-end md:hidden"
+                            >
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-l-md object-cover md:w-[150px]"
+                            />
+                            <div class="flex flex-col p-5">
+                                <h3
+                                    class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                                >
+                                    Titre de l'article
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base md:text-start"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div
+                                class="flex cursor-pointer justify-end md:hidden"
+                            >
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-l-md object-cover md:w-[150px]"
+                            />
+                            <div class="flex flex-col p-5">
+                                <h3
+                                    class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                                >
+                                    Titre de l'article
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base md:text-start"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div
+                                class="flex cursor-pointer justify-end md:hidden"
+                            >
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div
+                            class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
+                        >
+                            <img
+                                src="src/assets/img/cards.jpg"
+                                alt="Photo de la page d'accueil du site web"
+                                class="rounded-l-md object-cover md:w-[150px]"
+                            />
+                            <div class="flex flex-col p-5">
+                                <h3
+                                    class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
+                                >
+                                    Titre de l'article
+                                </h3>
+                                <p
+                                    class="my-5 text-center text-sm sm:text-base md:text-start"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum magna molestie sed ac id id. Urna eu
+                                    sed a a mauris vulputate in ut.
+                                </p>
+                            </div>
+                            <div
+                                class="flex cursor-pointer justify-end md:hidden"
+                            >
+                                <i
+                                    class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                                ></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a
+                    href="pages/blog/blog.html"
+                    class="mt-12 rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                >
+                    Découvrir mon blog
+                </a>
+            </section>
+        </main>
+        <footer
+            class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
         >
-          Portfolio
-        </h2>
-        <div
-          class="grid grid-cols-1 grid-rows-3 gap-10 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 xl:grid-cols-4 xl:grid-rows-1"
-        >
-          <a href="#">
             <div
-              class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
+                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
             >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-tl-md rounded-tr-md"
-              />
-              <div class="mx-7 mt-7 flex flex-col items-center justify-center">
-                <h3
-                  class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                <div class="flex flex-col items-center justify-center">
+                    <a href="./index.html" title="Accueil">
+                        <img
+                            src="src/assets/img/logo-light.png"
+                            alt="Logo du portfolio"
+                            class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
+                        />
+                        <img
+                            src="src/assets/img/logo-dark.png"
+                            alt="Logo du portfolio"
+                            class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
+                        />
+                    </a>
+                    <div class="flex">
+                        <div
+                            class="mr-4 flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                        >
+                            <a
+                                href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="src/assets/img/linkedin.png"
+                                    alt="Logo Travail d'équipe"
+                                    class="w-8"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                        >
+                            <a
+                                href="https://github.com/stephanievanoverberghe"
+                                target="_blank"
+                            >
+                                <img
+                                    src="src/assets/img/github.png"
+                                    alt="Logo agility"
+                                    class="w-8"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
                 >
-                  Titre du projet
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div
-              class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-tl-md rounded-tr-md"
-              />
-              <div class="mx-7 mt-7 flex flex-col items-center justify-center">
-                <h3
-                  class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
+                    <span
+                        class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+                        >Liens importants</span
+                    >
+                    <a
+                        href="pages/projects/projects.html"
+                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >Portfolio</a
+                    >
+                    <a
+                        href="pages/contact.html"
+                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >Contact</a
+                    >
+                    <a
+                        href="pages/blog/blog.html"
+                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >Blog</a
+                    >
+                    <a
+                        href="pages/about.html"
+                        class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >A propos</a
+                    >
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
                 >
-                  Titre du projet
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
+                    <span
+                        class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
+                        >Informations légales</span
+                    >
+                    <a
+                        href="pages/infos/legal-notice.html"
+                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >Mentions légales</a
+                    >
+                    <a
+                        href="pages/infos/privacy-policy.html"
+                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >Politique de confidentialité</a
+                    >
+                    <a
+                        href="pages/infos/cgu.html"
+                        class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                        >CGU</a
+                    >
+                </div>
             </div>
-          </a>
-          <a href="#">
-            <div
-              class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-tl-md rounded-tr-md"
-              />
-              <div class="mx-7 mt-7 flex flex-col items-center justify-center">
-                <h3
-                  class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-                >
-                  Titre du projet
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="hidden md:block lg:hidden xl:block">
-            <div
-              class="max-w-[280px] rounded-md shadow-light-default transition-transform lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-tl-md rounded-tr-md"
-              />
-              <div class="mx-7 mt-7 flex flex-col items-center justify-center">
-                <h3
-                  class="font-Patua text-xl sm:text-2xl dark:text-red-pink-300"
-                >
-                  Titre du projet
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-        </div>
-        <a
-          href="pages/projects/projects.html"
-          class="mt-12 rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-        >
-          Découvrir mon portfolio
-        </a>
-      </section>
-      <section
-        class="mx-5 my-12 flex flex-col items-center justify-center md:my-28"
-      >
-        <h2
-          class="mb-10 font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
-        >
-          Blog
-        </h2>
-        <div class="grid gap-10 md:grid-cols-1 lg:grid-cols-2">
-          <a href="#">
-            <div
-              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-l-md object-cover md:w-[150px]"
-              />
-              <div class="flex flex-col p-5">
-                <h3
-                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
-                >
-                  Titre de l'article
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base md:text-start">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end md:hidden">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div
-              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-l-md object-cover md:w-[150px]"
-              />
-              <div class="flex flex-col p-5">
-                <h3
-                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
-                >
-                  Titre de l'article
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base md:text-start">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end md:hidden">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div
-              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-l-md object-cover md:w-[150px]"
-              />
-              <div class="flex flex-col p-5">
-                <h3
-                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
-                >
-                  Titre de l'article
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base md:text-start">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end md:hidden">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-          <a href="#">
-            <div
-              class="flex h-auto max-w-[280px] flex-col rounded-md shadow-light-default transition-transform md:max-w-[600px] md:flex-row lg:hover:scale-105 dark:shadow-dark-default"
-            >
-              <img
-                src="src/assets/img/cards.jpg"
-                alt="Photo de la page d'accueil du site web"
-                class="rounded-l-md object-cover md:w-[150px]"
-              />
-              <div class="flex flex-col p-5">
-                <h3
-                  class="text-center font-Patua text-xl sm:text-2xl md:text-start dark:text-red-pink-300"
-                >
-                  Titre de l'article
-                </h3>
-                <p class="my-5 text-center text-sm sm:text-base md:text-start">
-                  Lorem ipsum dolor sit amet consectetur. Ipsum magna molestie
-                  sed ac id id. Urna eu sed a a mauris vulputate in ut.
-                </p>
-              </div>
-              <div class="flex cursor-pointer justify-end md:hidden">
-                <i
-                  class="fa-solid fa-circle-arrow-right m-2 mt-0 flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-                ></i>
-              </div>
-            </div>
-          </a>
-        </div>
-        <a
-          href="pages/blog/blog.html"
-          class="mt-12 rounded-md bg-red-pink-50 px-6 py-4 font-bold shadow-light-default transition-shadow hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-        >
-          Découvrir mon blog
-        </a>
-      </section>
-    </main>
-    <footer
-      class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
-    >
-      <div
-        class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
-      >
-        <div class="flex flex-col items-center justify-center">
-          <a href="./index.html" title="Accueil">
-            <img
-              src="src/assets/img/logo-light.png"
-              alt="Logo du portfolio"
-              class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
-            />
-            <img
-              src="src/assets/img/logo-dark.png"
-              alt="Logo du portfolio"
-              class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
-            />
-          </a>
-          <div class="flex">
-            <div
-              class="mr-4 flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-            >
-              <a
-                href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
-                target="_blank"
-              >
-                <img
-                  src="src/assets/img/linkedin.png"
-                  alt="Logo Travail d'équipe"
-                  class="w-8"
-                />
-              </a>
-            </div>
-            <div
-              class="flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-            >
-              <a
-                href="https://github.com/stephanievanoverberghe"
-                target="_blank"
-              >
-                <img
-                  src="src/assets/img/github.png"
-                  alt="Logo agility"
-                  class="w-8"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
-        >
-          <span
-            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
-            >Liens importants</span
-          >
-          <a
-            href="pages/projects/projects.html"
-            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >Portfolio</a
-          >
-          <a
-            href="pages/contact.html"
-            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >Contact</a
-          >
-          <a
-            href="pages/blog/blog.html"
-            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >Blog</a
-          >
-          <a
-            href="pages/about.html"
-            class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >A propos</a
-          >
-        </div>
-        <div
-          class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
-        >
-          <span
-            class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
-            >Informations légales</span
-          >
-          <a
-            href="pages/infos/legal-notice.html"
-            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >Mentions légales</a
-          >
-          <a
-            href="pages/infos/privacy-policy.html"
-            class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >Politique de confidentialité</a
-          >
-          <a
-            href="pages/infos/cgu.html"
-            class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-            >CGU</a
-          >
-        </div>
-      </div>
-      <p class="mt-10 text-center text-xs">
-        Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
-      </p>
-    </footer>
+            <p class="mt-10 text-center text-xs">
+                Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
+            </p>
+        </footer>
 
-    <script src="src/js/script.js"></script>
-  </body>
+        <script src="src/js/script.js"></script>
+    </body>
 </html>
