@@ -944,6 +944,10 @@ select {
   margin-bottom: 1.75rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1330,6 +1334,30 @@ select {
 
 .bg-\[url\(\'\.\.\/src\/assets\/img\/immo-prestige\.png\'\)\] {
   background-image: url('../src/assets/img/immo-prestige.png');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('../../img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\.\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('../img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/\.\.\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('../../../img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('./../src/assets/img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/formations-dessin\.jpg\'\)\] {
+  background-image: url('./../src/assets/img/formations-dessin.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/immo-prestige\.png\'\)\] {
+  background-image: url('./../src/assets/img/immo-prestige.png');
 }
 
 .from-red-pink-100 {
