@@ -1304,6 +1304,34 @@ select {
   background-image: url('/src/assets/img/home-project-3.webp');
 }
 
+.bg-\[url\(\'\.\/src\/assets\/img\/formations-dessin\.jpg\'\)\] {
+  background-image: url('./src/assets/img/formations-dessin.jpg');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('./src/assets/img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\/src\/assets\/img\/immo-prestige\.png\'\)\] {
+  background-image: url('./src/assets/img/immo-prestige.png');
+}
+
+.bg-\[url\(\'src\/assets\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('src/assets/img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/img\/home-project-3\.webp\'\)\] {
+  background-image: url('../src/assets/img/home-project-3.webp');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/img\/formations-dessin\.jpg\'\)\] {
+  background-image: url('../src/assets/img/formations-dessin.jpg');
+}
+
+.bg-\[url\(\'\.\.\/src\/assets\/img\/immo-prestige\.png\'\)\] {
+  background-image: url('../src/assets/img/immo-prestige.png');
+}
+
 .from-red-pink-100 {
   --tw-gradient-from: #ffe4e7 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 228 231 / 0) var(--tw-gradient-to-position);
@@ -1491,6 +1519,11 @@ select {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
