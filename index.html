@@ -26,9 +26,7 @@
     <body
         class="bg-red-pink-50 text-red-pink-950 dark:bg-red-pink-950 dark:text-red-pink-50"
     >
-        <div
-            class="grid grid-cols-1 grid-rows-1 bg-red-pink-50 sm:grid-rows-[100px_auto_100px] dark:bg-red-pink-950"
-        >
+        <div class="flex flex-col bg-red-pink-50 dark:bg-red-pink-950">
             <!-- HEADER DESKTOP AND TABLETTE -->
             <header
                 class="hidden items-center justify-between rounded-full bg-red-pink-100 sm:m-4 sm:flex dark:bg-red-pink-900"
@@ -50,19 +48,31 @@
                 <nav class="hidden lg:block">
                     <ul class="flex items-center gap-6">
                         <li
-                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
-                            <a href="pages/about.html">A propos</a>
+                            <a
+                                href="pages/about.html"
+                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >A propos</a
+                            >
                         </li>
                         <li
-                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
-                            <a href="pages/projects/projects.html">Projets</a>
+                            <a
+                                href="pages/projects/projects.html"
+                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >Projets</a
+                            >
                         </li>
                         <li
-                            class="cursor-pointer rounded-full bg-red-pink-50 px-8 py-2 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
-                            <a href="pages/blog/blog.html">Blog</a>
+                            <a
+                                href="pages/blog/blog.html"
+                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
+                                >Blog</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -71,11 +81,11 @@
                         class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
                     >
                         <i
-                            class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-100 shadow-light-pressed hover:shadow-light-default dark:opacity-0"
+                            class="fa-solid fa-sun h-8 w-8 cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-2 opacity-100 shadow-light-pressed hover:shadow-light-default dark:opacity-0"
                             id="light"
                         ></i>
                         <i
-                            class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-red-pink-100 p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:bg-red-pink-900 dark:opacity-100"
+                            class="fa-solid fa-moon h-8 w-8 cursor-pointer rounded-full bg-gradient-to-br p-2 opacity-0 shadow-dark-pressed hover:shadow-dark-default dark:from-red-pink-900 dark:to-red-pink-950 dark:opacity-100"
                             id="dark"
                         ></i>
                     </div>
@@ -88,9 +98,10 @@
                     </div>
                     <a
                         href="pages/contact.html"
-                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-                        >Me contacter</a
+                        class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                     >
+                        Me contacter
+                    </a>
                 </div>
             </header>
             <!-- HEADER MOBILE -->
@@ -128,9 +139,11 @@
                 </div>
             </header>
             <!-- SECTION HERO -->
-            <section>
+            <section
+                class="items-center justify-center xl:container md:mt-5 lg:flex xl:mx-auto"
+            >
                 <div
-                    class="flex h-64 items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    class="flex h-64 items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default sm:hidden dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                 >
                     <img
                         class="hidden max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-900 to-red-pink-950 pt-10 shadow-dark-default dark:block"
@@ -144,19 +157,35 @@
                     />
                 </div>
                 <div
-                    class="m-14 mx-3 mb-16 flex flex-col items-center justify-center"
+                    class="mr-6 hidden justify-center md:order-2 md:flex xl:ml-20 xl:mr-0"
+                >
+                    <img
+                        class="hidden max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-900 to-red-pink-950 pt-10 shadow-dark-default md:max-w-96 xl:max-w-[495px] dark:block"
+                        src="src/assets/img/infographie-01-dark.png"
+                        alt=""
+                    />
+                    <img
+                        class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default md:max-w-96 xl:max-w-[495px] dark:hidden"
+                        src="src/assets/img/infographie-01.png"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="mx-3 my-16 flex flex-col items-center justify-center sm:mx-6 lg:items-start xl:mx-0"
                 >
                     <span
                         class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
                         >Bienvenue dans mon monde</span
                     >
-                    <h1 class="mb-4 mt-5 text-center font-Patua text-2xl">
-                        Bonjour, je suis <br />
+                    <h1
+                        class="mb-4 mt-5 text-center font-Patua text-2xl md:mt-7 md:text-4xl lg:text-start"
+                    >
+                        Bonjour, je suis <br class="md:hidden" />
                         <span class="text-red-pink-600 dark:text-red-pink-400"
                             >Développeuse Front-End</span
                         >
                     </h1>
-                    <h2 class="mb-5 font-Patua text-lg">
+                    <h2 class="mb-5 font-Patua text-lg md:text-2xl">
                         spécialisée en
                         <span class="text-red-pink-600 dark:text-red-pink-400"
                             >React</span
@@ -165,249 +194,260 @@
                             |
                         </span>
                     </h2>
-                    <p class="mb-6 text-sm leading-relaxed">
+                    <p
+                        class="mb-6 text-sm leading-relaxed md:mt-7 md:text-base"
+                    >
                         J’utilise le développement web comme moyen d’exprimer ma
                         créativité. Je suis passionnée depuis 2022. Pour voir ce
                         que je crée, il suffit d’explorer mon portfolio, vous y
                         trouverez mes projets les plus significatifs.
                     </p>
-                    <div class="flex flex-col items-center justify-center">
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 dark:text-red-pink-100"
-                            >Me trouver</span
+                    <div class="gap-20 sm:mt-4 sm:flex md:mt-10">
+                        <div
+                            class="flex flex-col items-center justify-center md:items-start"
                         >
-                        <div class="mb-6 mt-4 flex gap-4">
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            <span
+                                class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                                >Me trouver</span
                             >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/linkedin.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                            >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/github.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                            >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/behance.png"
-                                    alt=""
-                                />
-                            </button>
+                            <div class="mb-6 mt-4 flex gap-4 md:gap-6">
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/linkedin.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/github.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/behance.png"
+                                        alt=""
+                                    />
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <span
-                            class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 dark:text-red-pink-100"
-                            >Meilleures compétences</span
+                        <div
+                            class="flex flex-col items-center justify-center md:items-start"
                         >
-                        <div class="mb-5 mt-4 flex gap-4">
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            <span
+                                class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                                >Meilleures compétences</span
                             >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/react.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                            >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/typescript.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                            >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/figma.png"
-                                    alt=""
-                                />
-                            </button>
-                            <button
-                                class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                            >
-                                <img
-                                    class="h-6 w-6"
-                                    src="src/assets/img/redux.png"
-                                    alt=""
-                                />
-                            </button>
+                            <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/react.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/typescript.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/figma.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                                >
+                                    <img
+                                        class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                        src="src/assets/img/redux.png"
+                                        alt=""
+                                    />
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <main class="mx-3 flex flex-col items-center justify-center">
-            <section class="mb-16 flex flex-col items-center">
+        <main
+            class="mx-3 flex flex-col items-center justify-center xl:container sm:mx-6 xl:mx-auto"
+        >
+            <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
-                    class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
                 >
                     Particularité
                 </span>
-                <h2 class="mb-5 font-Patua text-lg">
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Ce que je
                     <span class="text-red-pink-400"> fais </span>
                     .
                 </h2>
-                <div class="flex flex-col gap-5">
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                <div
+                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3"
+                >
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i class="fa-solid fa-ruler-combined fa-lg"></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Design UX
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                Je facilite l’expérience des utilisateurs
-                                derrière un écran (smartphones, tablettes,
-                                ordinateurs, etc.).
-                            </p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            <i
+                                class="fa-solid fa-ruler-combined fa-lg md:fa-xl"
+                            ></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Design UX
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i class="fa-solid fa-palette fa-lg"></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Design UI
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                Je conçois le design graphique de vos sites web
-                                (couleurs, illustrations, typographie, etc.).
-                            </p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            Je facilite l’expérience des utilisateurs derrière
+                            un écran (smartphones, tablettes, ordinateurs,
+                            etc.).
+                        </p>
+                    </article>
+
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i class="fa-solid fa-code fa-lg"></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Développement web
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                Je réalise l’ensemble des fonctionnalités
-                                techniques de votre site web ou application.
-                            </p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            <i class="fa-solid fa-palette fa-lg md:fa-xl"></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Design UI
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i
-                                    class="fa-solid fa-magnifying-glass-chart fa-lg"
-                                ></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Référencement
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                J’optimise vos pages web pour augmenter leurs
-                                visibilités dans les moteurs de recherches.
-                            </p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            Je conçois le design graphique de vos sites web
+                            (couleurs, illustrations, typographie, etc.).
+                        </p>
+                    </article>
+
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i class="fa-solid fa-tower-cell fa-lg"></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Réseaux sociaux
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                J’organise et je développe votre communauté en
-                                ligne grâce à un plan sur-mesure.
-                            </p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Développement web
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
                         >
-                            <div
-                                class="flex items-center text-red-pink-600 dark:text-red-pink-400"
-                            >
-                                <i class="fa-solid fa-wrench fa-lg"></i>
-                                <h3 class="ms-5 font-Patua text-base">
-                                    Maintenance
-                                </h3>
-                            </div>
-                            <p
-                                class="my-3 text-sm leading-relaxed text-red-pink-800 dark:text-red-pink-50"
-                            >
-                                Je participe à la maintenance de votre site web
-                                en corrigeant les bugs
-                            </p>
-                        </article>
-                    </a>
+                            Je réalise l’ensemble des fonctionnalités techniques
+                            de votre site web ou application.
+                        </p>
+                    </article>
+
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                        >
+                            <i
+                                class="fa-solid fa-magnifying-glass-chart fa-lg md:fa-xl"
+                            ></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Référencement
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                        >
+                            J’optimise vos pages web pour augmenter leurs
+                            visibilités dans les moteurs de recherches.
+                        </p>
+                    </article>
+
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                        >
+                            <i
+                                class="fa-solid fa-tower-cell fa-lg md:fa-xl"
+                            ></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Réseaux sociaux
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                        >
+                            J’organise et je développe votre communauté en ligne
+                            grâce à un plan sur-mesure.
+                        </p>
+                    </article>
+
+                    <article
+                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <div
+                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                        >
+                            <i class="fa-solid fa-wrench fa-lg md:fa-xl"></i>
+                            <h3 class="ms-5 font-Patua text-base md:text-lg">
+                                Maintenance
+                            </h3>
+                        </div>
+                        <p
+                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                        >
+                            Je participe à la maintenance de votre site web en
+                            corrigeant les bugs
+                        </p>
+                    </article>
                 </div>
             </section>
-            <section class="mb-16 flex flex-col items-center">
+            <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
-                    class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
                 >
                     Projets réalisés
                 </span>
-                <h2 class="mb-5 font-Patua text-lg">
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Ce que j'ai déjà
                     <span class="text-red-pink-600 dark:text-red-pink-400">
                         fais</span
                     >
                     .
                 </h2>
-                <div class="flex flex-col gap-5">
+                <div
+                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
+                >
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
                             <div
                                 class="flex h-32 items-center justify-center rounded-t-lg bg-[url('./../src/assets/img/formations-dessin.jpg')] bg-cover bg-center"
@@ -415,56 +455,61 @@
                                 <div
                                     class="rounded-lg bg-red-pink-200 bg-opacity-75 dark:bg-red-pink-700 dark:bg-opacity-75"
                                 >
-                                    <h3 class="p-5 font-Patua text-base">
+                                    <h3
+                                        class="p-5 font-Patua text-base md:text-lg"
+                                    >
                                         Formations Dessin
                                     </h3>
                                 </div>
                             </div>
                             <div class="rounded-b-lg p-5">
                                 <h4
-                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 dark:text-red-pink-400"
+                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base dark:text-red-pink-400"
                                 >
                                     Développement
                                 </h4>
-                                <p class="mb-5 mt-3 text-sm leading-relaxed">
+                                <p
+                                    class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
+                                >
                                     Création d’un site web sur l’apprentissage
                                     du dessin. Réalisation de A à Z, de la
                                     gestion de projet à la création de la base
                                     de données.
                                 </p>
-                                <div class="flex gap-4">
+                                <div class="flex gap-4 md:gap-6">
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/figma.png"
                                             alt=""
                                         />
                                     </button>
+
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/javascript.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/php.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/sql.png"
                                             alt=""
                                         />
@@ -475,7 +520,7 @@
                     </a>
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
                             <div
                                 class="flex h-32 items-center justify-center rounded-t-lg bg-[url('./../src/assets/img/immo-prestige.png')] bg-cover bg-center"
@@ -483,47 +528,51 @@
                                 <div
                                     class="rounded-lg bg-red-pink-200 bg-opacity-75 dark:bg-red-pink-700 dark:bg-opacity-75"
                                 >
-                                    <h3 class="p-5 font-Patua text-base">
+                                    <h3
+                                        class="p-5 font-Patua text-base md:text-lg"
+                                    >
                                         Immo Prestige
                                     </h3>
                                 </div>
                             </div>
                             <div class="rounded-b-lg p-5">
                                 <h4
-                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 dark:text-red-pink-400"
+                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base dark:text-red-pink-400"
                                 >
                                     Développement
                                 </h4>
-                                <p class="mb-5 mt-3 text-sm leading-relaxed">
+                                <p
+                                    class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
+                                >
                                     Création d’un site web sur l’apprentissage
                                     du dessin. Réalisation de A à Z, de la
                                     gestion de projet à la création de la base
                                     de données.
                                 </p>
-                                <div class="flex gap-4">
+                                <div class="flex gap-4 md:gap-6">
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/figma.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/react.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/redux.png"
                                             alt=""
                                         />
@@ -534,7 +583,7 @@
                     </a>
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
                             <div
                                 class="flex h-32 items-center justify-center rounded-t-lg bg-[url('./../src/assets/img/home-project-3.webp')] bg-cover bg-center"
@@ -542,47 +591,114 @@
                                 <div
                                     class="rounded-lg bg-red-pink-200 bg-opacity-75 dark:bg-red-pink-700 dark:bg-opacity-75"
                                 >
-                                    <h3 class="p-5 font-Patua text-base">
+                                    <h3
+                                        class="p-5 font-Patua text-base md:text-lg"
+                                    >
                                         Norel Art
                                     </h3>
                                 </div>
                             </div>
                             <div class="rounded-b-lg p-5">
                                 <h4
-                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 dark:text-red-pink-400"
+                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base dark:text-red-pink-400"
                                 >
                                     UX/UI design
                                 </h4>
-                                <p class="mb-5 mt-3 text-sm leading-relaxed">
+                                <p
+                                    class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
+                                >
                                     Création des maquettes entièrement
                                     responsives. Réalisation de A à Z, de la
                                     gestion de projet à la conception des
                                     maquettes.
                                 </p>
-                                <div class="flex gap-4">
+                                <div class="flex gap-4 md:gap-6">
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/figma.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                             src="src/assets/img/photoshop.png"
                                             alt=""
                                         />
                                     </button>
                                     <button
-                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                        class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                                     >
                                         <img
-                                            class="h-6 w-6"
+                                            class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
+                                            src="src/assets/img/illustrator.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="" class="hidden sm:block lg:hidden">
+                        <article
+                            class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        >
+                            <div
+                                class="flex h-32 items-center justify-center rounded-t-lg bg-[url('./../src/assets/img/home-project-3.webp')] bg-cover bg-center"
+                            >
+                                <div
+                                    class="rounded-lg bg-red-pink-200 bg-opacity-75 dark:bg-red-pink-700 dark:bg-opacity-75"
+                                >
+                                    <h3
+                                        class="p-5 font-Patua text-base md:text-lg"
+                                    >
+                                        Art Planète
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="rounded-b-lg p-5">
+                                <h4
+                                    class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base dark:text-red-pink-400"
+                                >
+                                    UX/UI design
+                                </h4>
+                                <p
+                                    class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
+                                >
+                                    Création des maquettes entièrement
+                                    responsives. Réalisation de A à Z, de la
+                                    gestion de projet à la conception des
+                                    maquettes.
+                                </p>
+                                <div class="flex gap-4 md:gap-6">
+                                    <button
+                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                    >
+                                        <img
+                                            class="h-6 w-6 md:h-9 md:w-9"
+                                            src="src/assets/img/figma.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <button
+                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                    >
+                                        <img
+                                            class="h-6 w-6 md:h-9 md:w-9"
+                                            src="src/assets/img/photoshop.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <button
+                                        class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                                    >
+                                        <img
+                                            class="h-6 w-6 md:h-9 md:w-9"
                                             src="src/assets/img/illustrator.png"
                                             alt=""
                                         />
@@ -593,102 +709,139 @@
                     </a>
                 </div>
             </section>
-            <section class="mb-16 flex flex-col items-center">
+            <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
-                    class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
                 >
                     Sujets de prédilection
                 </span>
-                <h2 class="mb-5 font-Patua text-lg">
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
                     Ce que me
                     <span class="text-red-pink-600 dark:text-red-pink-400">
                         passionne</span
                     >
                     .
                 </h2>
-                <div class="flex flex-col gap-5">
+                <div
+                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 xl:gap-x-24 xl:gap-y-9"
+                >
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full grid-cols-[200px_auto] flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
-                            <img
-                                class="rounded-t-lg"
-                                src="src/assets/img/ux-ui-design.jpg"
-                                alt=""
-                            />
-                            <h3
-                                class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 dark:text-red-pink-400"
+                            <div
+                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
                             >
-                                Le design UX/UI
-                            </h3>
-                            <p class="pb-4 text-sm leading-relaxed">
-                                L’ergonomie web, le design thinking, les
-                                logiciels, la moodboard, les bonnes pratiques,
-                                logo, palette de couleurs, charte graphique ...
-                            </p>
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="src/assets/img/ux-ui-design.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lg:ml-3 xl:ml-6">
+                                <h3
+                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
+                                >
+                                    Le design UX/UI
+                                </h3>
+                                <p
+                                    class="pb-4 text-sm leading-relaxed md:text-base"
+                                >
+                                    L’ergonomie web, le design thinking, les
+                                    logiciels, la moodboard, les bonnes
+                                    pratiques, logo, palette de couleurs, charte
+                                    graphique ...
+                                </p>
+                            </div>
                         </article>
                     </a>
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full grid-cols-[200px_auto] flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
-                            <img
-                                class="rounded-t-lg"
-                                src="src/assets/img/developpement-web.jpg"
-                                alt=""
-                            />
-                            <h3
-                                class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 dark:text-red-pink-400"
+                            <div
+                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
                             >
-                                Le développement front-end
-                            </h3>
-                            <p class="pb-4 text-sm leading-relaxed">
-                                Les langages Front-End, HTML, CSS, TailwindCSS,
-                                JavaScript, React, TypeScript, la sémantique,
-                                les animations, les flexbox ...
-                            </p>
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="src/assets/img/developpement-web.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lg:ml-3 xl:ml-6">
+                                <h3
+                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
+                                >
+                                    Le développement front-end
+                                </h3>
+                                <p
+                                    class="pb-4 text-sm leading-relaxed md:text-base"
+                                >
+                                    Les langages Front-End, HTML, CSS,
+                                    TailwindCSS, JavaScript, React, TypeScript,
+                                    la sémantique, les animations, les flexbox
+                                    ...
+                                </p>
+                            </div>
                         </article>
                     </a>
                     <a href="">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full grid-cols-[200px_auto] flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
-                            <img
-                                class="rounded-t-lg"
-                                src="src/assets/img/communication-digitale.jpg"
-                                alt=""
-                            />
-                            <h3
-                                class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 dark:text-red-pink-400"
+                            <div
+                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
                             >
-                                La communication digitale
-                            </h3>
-                            <p class="pb-4 text-sm leading-relaxed">
-                                Réseaux sociaux, gestion de projet, analyse de
-                                l’audience et du trafic, veille technologique,
-                                le référencement ...
-                            </p>
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="src/assets/img/communication-digitale.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lg:ml-3 xl:ml-6">
+                                <h3
+                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
+                                >
+                                    La communication digitale
+                                </h3>
+                                <p
+                                    class="pb-4 text-sm leading-relaxed md:text-base"
+                                >
+                                    Réseaux sociaux, gestion de projet, analyse
+                                    de l’audience et du trafic, veille
+                                    technologique, le référencement ...
+                                </p>
+                            </div>
                         </article>
                     </a>
-                    <a href="" class="hidden">
+                    <a href="" class="hidden sm:block">
                         <article
-                            class="rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="flex h-full grid-cols-[200px_auto] flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
-                            <img
-                                class="rounded-t-lg"
-                                src="src/assets/img/elearning.jpg"
-                                alt=""
-                            />
-                            <h3
-                                class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 dark:text-red-pink-400"
+                            <div
+                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
                             >
-                                Le E-learning
-                            </h3>
-                            <p class="pb-4 text-sm leading-relaxed">
-                                Création de plateforme d’apprentissage en ligne,
-                                création de vidéos, les principaux prestataires,
-                                les méthodes d’enseignements ...
-                            </p>
+                                <img
+                                    class="h-full w-full object-cover"
+                                    src="src/assets/img/elearning.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lg:ml-3 xl:ml-6">
+                                <h3
+                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
+                                >
+                                    Le E-learning
+                                </h3>
+                                <p
+                                    class="pb-4 text-sm leading-relaxed md:text-base"
+                                >
+                                    Création de plateforme d’apprentissage en
+                                    ligne, création de vidéos, les principaux
+                                    prestataires, les méthodes d’enseignements
+                                    ...
+                                </p>
+                            </div>
                         </article>
                     </a>
                 </div>
@@ -698,7 +851,7 @@
             class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
         >
             <div
-                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
+                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
             >
                 <div class="flex flex-col items-center justify-center">
                     <a href="./index.html" title="Accueil">
@@ -713,14 +866,14 @@
                             class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
                         />
                     </a>
-                    <div class="flex gap-4">
+                    <div class="flex gap-4 md:gap-6">
                         <a
                             href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
                             target="_blank"
-                            class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
                             <img
-                                class="h-6 w-6"
+                                class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                 src="src/assets/img/linkedin.png"
                                 alt=""
                             />
@@ -728,10 +881,10 @@
                         <a
                             href="https://github.com/stephanievanoverberghe"
                             target="_blank"
-                            class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
                             <img
-                                class="h-6 w-6"
+                                class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                 src="src/assets/img/github.png"
                                 alt=""
                             />
@@ -739,66 +892,68 @@
                         <a
                             href="https://www.behance.net/vano-stephanie"
                             target="_blank"
-                            class="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="group flex h-9 w-9 transform items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 hover:scale-95 hover:shadow-light-pressed md:h-12 md:w-12 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
                             <img
-                                class="h-6 w-6"
+                                class="h-6 w-6 transform transition-transform duration-300 group-hover:scale-90 md:h-8 md:w-8"
                                 src="src/assets/img/behance.png"
                                 alt=""
                             />
                         </a>
                     </div>
                 </div>
-                <div
-                    class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
-                >
-                    <span
-                        class="mb-4 font-Patua text-base uppercase text-red-pink-700 dark:text-red-pink-300"
-                        >Liens importants</span
+                <div class="flex justify-around">
+                    <div
+                        class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
                     >
-                    <a
-                        href="pages/projects/projects.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Portfolio</a
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg dark:text-red-pink-300"
+                            >Liens importants</span
+                        >
+                        <a
+                            href="pages/projects/projects.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Portfolio</a
+                        >
+                        <a
+                            href="pages/contact.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Contact</a
+                        >
+                        <a
+                            href="pages/blog/blog.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Blog</a
+                        >
+                        <a
+                            href="pages/about.html"
+                            class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >A propos</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
                     >
-                    <a
-                        href="pages/contact.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Contact</a
-                    >
-                    <a
-                        href="pages/blog/blog.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Blog</a
-                    >
-                    <a
-                        href="pages/about.html"
-                        class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >A propos</a
-                    >
-                </div>
-                <div
-                    class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
-                >
-                    <span
-                        class="mb-7 font-Patua text-sm uppercase text-red-pink-700 dark:text-red-pink-300"
-                        >Informations légales</span
-                    >
-                    <a
-                        href="pages/infos/legal-notice.html"
-                        class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Mentions légales</a
-                    >
-                    <a
-                        href="pages/infos/privacy-policy.html"
-                        class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Politique de confidentialité</a
-                    >
-                    <a
-                        href="pages/infos/cgu.html"
-                        class="text-xs text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >CGU</a
-                    >
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg dark:text-red-pink-300"
+                            >Informations légales</span
+                        >
+                        <a
+                            href="pages/infos/legal-notice.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Mentions légales</a
+                        >
+                        <a
+                            href="pages/infos/privacy-policy.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Politique de confidentialité</a
+                        >
+                        <a
+                            href="pages/infos/cgu.html"
+                            class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >CGU</a
+                        >
+                    </div>
                 </div>
             </div>
             <p class="mt-10 text-center text-xs">
