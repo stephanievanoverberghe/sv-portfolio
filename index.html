@@ -1,8 +1,12 @@
 <!doctype html>
 <html lang="fr" class="dark">
     <head>
+        <!-- Encodage des caractères pour l'UTF-8 -->
         <meta charset="UTF-8" />
+        <!-- Configuration de la vue pour un affichage responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Préchargement des polices Google -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,11 +19,15 @@
             href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
             rel="stylesheet"
         />
+        <!-- Chargement des icônes FontAwesome -->
         <script
             src="https://kit.fontawesome.com/33a775bcdb.js"
             crossorigin="anonymous"
         ></script>
+        <!-- Lien vers le fichier CSS -->
         <link rel="stylesheet" href="./src/output.css" />
+
+        <!-- Titre de la page -->
         <title>Vanoverberghe Stéphanie - Portfolio</title>
     </head>
 
@@ -33,11 +41,13 @@
             >
                 <div class="cursor-pointer">
                     <a href="./index.html" title="Accueil">
+                        <!-- Logo clair -->
                         <img
                             src="src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
                             class="ml-6 h-14 dark:hidden"
                         />
+                        <!-- Logo sombre -->
                         <img
                             src="src/assets/img/logo-dark.png"
                             alt="Logo du portfolio"
@@ -45,8 +55,10 @@
                         />
                     </a>
                 </div>
+                <!-- Navigation principale -->
                 <nav class="hidden lg:block">
                     <ul class="flex items-center gap-6">
+                        <!-- Liens de navigation avec effets visuels -->
                         <li
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
@@ -76,7 +88,9 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- Composants à droite du header -->
                 <div class="flex items-center gap-6">
+                    <!-- Boutons pour basculer entre les modes clair et sombre -->
                     <div
                         class="rounded-full bg-red-pink-50 px-1 py-1 shadow-light-hover dark:bg-red-pink-950 dark:shadow-dark-hover"
                     >
@@ -89,6 +103,7 @@
                             id="dark"
                         ></i>
                     </div>
+                    <!-- Bouton du menu hamburger pour mobile -->
                     <div class="block lg:hidden">
                         <button
                             class="mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
@@ -96,6 +111,7 @@
                             <i class="fa-solid fa-bars fa-xl"></i>
                         </button>
                     </div>
+                    <!-- Lien vers la page de contact -->
                     <a
                         href="pages/contact.html"
                         class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
@@ -108,6 +124,7 @@
             <header
                 class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
             >
+                <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
                     <a
                         href="index.html"
@@ -142,6 +159,7 @@
             <section
                 class="items-center justify-center xl:container md:mt-5 lg:flex xl:mx-auto"
             >
+                <!-- Image hero pour mobile -->
                 <div
                     class="flex h-64 items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default sm:hidden dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                 >
@@ -156,6 +174,7 @@
                         alt=""
                     />
                 </div>
+                <!-- Image hero pour desktop et tablette -->
                 <div
                     class="mr-6 hidden justify-center md:order-2 md:flex xl:ml-20 xl:mr-0"
                 >
@@ -170,6 +189,7 @@
                         alt=""
                     />
                 </div>
+                <!-- Texte de présentation -->
                 <div
                     class="mx-3 my-16 flex flex-col items-center justify-center sm:mx-6 lg:items-start xl:mx-0"
                 >
@@ -202,6 +222,7 @@
                         que je crée, il suffit d’explorer mon portfolio, vous y
                         trouverez mes projets les plus significatifs.
                     </p>
+                    <!-- Boutons pour les réseaux sociaux et les compétences -->
                     <div class="gap-20 sm:mt-4 sm:flex md:mt-10">
                         <div
                             class="flex flex-col items-center justify-center md:items-start"
@@ -290,6 +311,7 @@
                 </div>
             </section>
         </div>
+        <!-- MAIN -->
         <main
             class="mx-3 flex flex-col items-center justify-center xl:container sm:mx-6 xl:mx-auto"
         >
@@ -304,9 +326,11 @@
                     <span class="text-red-pink-400"> fais </span>
                     .
                 </h2>
+                <!-- Articles décrivant les compétences -->
                 <div
                     class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3"
                 >
+                    <!-- Article sur le Design UX -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -328,7 +352,7 @@
                             etc.).
                         </p>
                     </article>
-
+                    <!-- Article sur le Design UI -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -347,7 +371,7 @@
                             (couleurs, illustrations, typographie, etc.).
                         </p>
                     </article>
-
+                    <!-- Article sur le Développement web -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -366,7 +390,7 @@
                             de votre site web ou application.
                         </p>
                     </article>
-
+                    <!-- Article sur le Référencement -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -387,7 +411,7 @@
                             visibilités dans les moteurs de recherches.
                         </p>
                     </article>
-
+                    <!-- Article sur les Réseaux sociaux -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -408,7 +432,7 @@
                             grâce à un plan sur-mesure.
                         </p>
                     </article>
-
+                    <!-- Article sur la Maintenance -->
                     <article
                         class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
@@ -429,6 +453,7 @@
                     </article>
                 </div>
             </section>
+            <!-- PROJETS REALISES -->
             <section class="my-16 flex flex-col items-center lg:items-start">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
@@ -442,9 +467,11 @@
                     >
                     .
                 </h2>
+                <!-- Articles décrivant les projets réalisés -->
                 <div
                     class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
                 >
+                    <!-- PROJECT 1 -->
                     <a href="">
                         <article
                             class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
@@ -518,6 +545,7 @@
                             </div>
                         </article>
                     </a>
+                    <!-- PROJECT 2 -->
                     <a href="">
                         <article
                             class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
@@ -581,6 +609,7 @@
                             </div>
                         </article>
                     </a>
+                    <!-- PROJECT 3 -->
                     <a href="">
                         <article
                             class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
@@ -644,6 +673,7 @@
                             </div>
                         </article>
                     </a>
+                    <!-- PROJECT 4 -->
                     <a href="" class="hidden sm:block lg:hidden">
                         <article
                             class="flex h-full flex-col justify-between rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
@@ -722,6 +752,7 @@
                     >
                     .
                 </h2>
+                <!-- Articles décrivant les sujets de prédilection -->
                 <div
                     class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 xl:gap-x-24 xl:gap-y-9"
                 >
@@ -847,19 +878,24 @@
                 </div>
             </section>
         </main>
+
+        <!-- FOOTER -->
         <footer
             class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
         >
             <div
                 class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
             >
+                <!-- Section logo et liens sociaux -->
                 <div class="flex flex-col items-center justify-center">
                     <a href="./index.html" title="Accueil">
+                        <!-- Logo clair -->
                         <img
                             src="src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
                             class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
                         />
+                        <!-- Logo sombre -->
                         <img
                             src="src/assets/img/logo-dark.png"
                             alt="Logo du portfolio"
@@ -902,6 +938,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Section des liens -->
                 <div class="flex justify-around">
                     <div
                         class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
@@ -961,6 +998,7 @@
             </p>
         </footer>
 
+        <!-- Lien vers le fichier JS -->
         <script src="src/js/script.js"></script>
     </body>
 </html>
