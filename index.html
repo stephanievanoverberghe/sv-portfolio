@@ -37,7 +37,7 @@
         <div class="flex flex-col bg-red-pink-100 dark:bg-red-pink-950">
             <!-- HEADER DESKTOP AND TABLETTE -->
             <header
-                class="hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-none"
+                class="z-50 hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-none"
             >
                 <div class="cursor-pointer">
                     <a href="./index.html" title="Accueil">
@@ -122,7 +122,7 @@
             </header>
             <!-- HEADER MOBILE -->
             <header
-                class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
+                class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
             >
                 <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
@@ -474,7 +474,7 @@
                     <!-- PROJECT 1 -->
                     <a href="">
                         <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                            class="lg:group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
                             <div
                                 class="relative h-full overflow-hidden rounded-lg"
@@ -489,7 +489,7 @@
                                 ></div>
                             </div>
                             <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-700 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
+                                class="absolute inset-0 flex flex-col justify-between lg:translate-y-full lg:transform lg:transition-transform lg:duration-700 lg:group-hover:translate-y-0"
                             >
                                 <div
                                     class="flex h-32 items-center justify-center rounded-t-lg"
