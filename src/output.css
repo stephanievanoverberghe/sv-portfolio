@@ -881,6 +881,11 @@ select {
   margin-bottom: 1.25rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1251,6 +1256,14 @@ select {
   border-top-width: 1px;
 }
 
+.border-r-\[1px\] {
+  border-right-width: 1px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -1263,6 +1276,26 @@ select {
 .border-red-pink-200 {
   --tw-border-opacity: 1;
   border-color: rgb(255 204 212 / var(--tw-border-opacity));
+}
+
+.border-r-slate-300 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-r-slate-200 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.border-r-slate-100 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.border-b-slate-100 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
 .bg-red-100 {
@@ -2414,6 +2447,12 @@ select {
 .dark\:shadow-dark-pressed:where(.dark, .dark *) {
   --tw-shadow: inset -2px -2px 4px 0 #fd6f88, inset 3px 3px 4px 0 #2C000F;
   --tw-shadow-colored: inset -2px -2px 4px 0 var(--tw-shadow-color), inset 3px 3px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark\:shadow-none:where(.dark, .dark *) {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
