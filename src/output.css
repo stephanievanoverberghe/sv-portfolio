@@ -777,6 +777,18 @@ select {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1006,6 +1018,10 @@ select {
   height: 2.25rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[68px\] {
   height: 68px;
 }
@@ -1016,6 +1032,10 @@ select {
 
 .h-screen {
   height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-10 {
@@ -1265,20 +1285,13 @@ select {
   background-color: rgb(255 241 243 / var(--tw-bg-opacity));
 }
 
+.bg-red-pink-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 15 66 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
-}
-
-.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/formations-dessin\.jpg\'\)\] {
-  background-image: url('./../src/assets/img/formations-dessin.jpg');
-}
-
-.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/home-project-3\.webp\'\)\] {
-  background-image: url('./../src/assets/img/home-project-3.webp');
-}
-
-.bg-\[url\(\'\.\/\.\.\/src\/assets\/img\/immo-prestige\.png\'\)\] {
-  background-image: url('./../src/assets/img/immo-prestige.png');
 }
 
 .bg-gradient-to-br {
@@ -1303,14 +1316,6 @@ select {
 
 .to-red-pink-950 {
   --tw-gradient-to: #4d041c var(--tw-gradient-to-position);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .object-cover {
@@ -1531,6 +1536,10 @@ select {
   opacity: 1;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
 .shadow-dark-default {
   --tw-shadow: -2px -2px 6px 0 #fd6f88, 5px 5px 4px 0 #2C000F;
   --tw-shadow-colored: -2px -2px 6px 0 var(--tw-shadow-color), 5px 5px 4px 0 var(--tw-shadow-color);
@@ -1573,14 +1582,6 @@ select {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1599,8 +1600,22 @@ select {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -1655,6 +1670,12 @@ select {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:shadow-dark-default:hover {
   --tw-shadow: -2px -2px 6px 0 #fd6f88, 5px 5px 4px 0 #2C000F;
   --tw-shadow-colored: -2px -2px 6px 0 var(--tw-shadow-color), 5px 5px 4px 0 var(--tw-shadow-color);
@@ -1682,6 +1703,12 @@ select {
 .group:hover .group-hover\:scale-90 {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-105 {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1876,10 +1903,6 @@ select {
     height: 3rem;
   }
 
-  .md\:h-8 {
-    height: 2rem;
-  }
-
   .md\:h-9 {
     height: 2.25rem;
   }
@@ -1894,10 +1917,6 @@ select {
 
   .md\:w-32 {
     width: 8rem;
-  }
-
-  .md\:w-8 {
-    width: 2rem;
   }
 
   .md\:w-9 {
@@ -2025,12 +2044,25 @@ select {
     height: 100%;
   }
 
+  .lg\:min-h-full {
+    min-height: 100%;
+  }
+
+  .lg\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .lg\:w-40 {
     width: 10rem;
   }
 
   .lg\:w-52 {
     width: 13rem;
+  }
+
+  .lg\:translate-y-full {
+    --tw-translate-y: 100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:transform {
@@ -2067,6 +2099,10 @@ select {
 
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:gap-24 {
@@ -2107,6 +2143,10 @@ select {
     line-height: 1.75rem;
   }
 
+  .lg\:opacity-0 {
+    opacity: 0;
+  }
+
   .lg\:transition-transform {
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2140,10 +2180,19 @@ select {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .group:hover .lg\:group-hover\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .group:hover .lg\:group-hover\:scale-90 {
     --tw-scale-x: .9;
     --tw-scale-y: .9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .group:hover .lg\:group-hover\:opacity-100 {
+    opacity: 1;
   }
 }
 
@@ -2168,6 +2217,10 @@ select {
 
   .xl\:mr-0 {
     margin-right: 0px;
+  }
+
+  .xl\:block {
+    display: block;
   }
 
   .xl\:hidden {
@@ -2196,6 +2249,10 @@ select {
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-5 {
