@@ -41,6 +41,7 @@ module.exports = {
         'light-default': ' -2px -2px 6px 0 #fff, 2px 2px 6px 0 #D4C8CA',
         'light-pressed': 'inset -2px -2px 4px 0 #fff, inset 2px 2px 6px 0 #D4C8CA',
         'shadow-header': '0 -2px 4px 0 #D4C8CA',
+        'shadow-hero-dark': '-2px -2px 6px 0 #f73c63, 5px 5px 4px 0 #1C000F'
       },
     },
   },

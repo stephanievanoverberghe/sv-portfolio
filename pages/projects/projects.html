@@ -31,11 +31,11 @@
         class="bg-red-pink-50 text-red-pink-950 dark:bg-red-pink-950 dark:text-red-pink-50"
     >
         <div
-            class="grid grid-rows-1 bg-red-pink-100 sm:grid-rows-[100px_auto] sm:pt-0 dark:bg-red-pink-950"
+            class="grid grid-rows-1 bg-red-pink-100 sm:grid-rows-[100px_auto] sm:pt-0 lg:h-screen dark:bg-red-pink-1000"
         >
             <!-- HEADER DESKTOP AND TABLETTE -->
             <header
-                class="z-50 hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-none"
+                class="z-50 hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-dark-pressed"
             >
                 <div class="cursor-pointer">
                     <a href="../../index.html" title="Accueil">
@@ -56,31 +56,37 @@
                 <!-- Navigation principale -->
                 <nav class="hidden lg:block">
                     <ul class="flex items-center gap-6">
-                        <li
+                        <!-- Liens de navigation avec effets visuels -->
+                        <a
+                            href="../../pages/about.html"
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
-                            <a
-                                href="../../pages/about.html"
+                            <li
                                 class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                >A propos</a
                             >
-                        </li>
-                        <li
+                                A propos
+                            </li>
+                        </a>
+                        <a
+                            href="../../pages/projects/projects.html"
                             class="cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 font-bold text-red-pink-600 shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:text-red-pink-300 dark:shadow-dark-pressed"
                         >
-                            <a href="../../pages/projects/projects.html"
-                                >Projets</a
+                            <li
+                                class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
                             >
-                        </li>
-                        <li
+                                Projets
+                            </li>
+                        </a>
+                        <a
+                            href="../../pages/blog/blog.html"
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 px-8 py-2 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
-                            <a
-                                href="../../pages/blog/blog.html"
+                            <li
                                 class="transform transition-transform duration-300 ease-in-out group-hover:scale-90"
-                                >Blog</a
                             >
-                        </li>
+                                Blog
+                            </li>
+                        </a>
                     </ul>
                 </nav>
                 <!-- Composants à droite du header -->
@@ -187,7 +193,7 @@
                     <div class="gap-5 sm:grid sm:grid-cols-3">
                         <a href="">
                             <div
-                                class="relative overflow-hidden rounded-lg shadow-light-default sm:h-64 lg:h-96 dark:shadow-dark-default"
+                                class="dark:shadow-shadow-hero-dark relative overflow-hidden rounded-lg shadow-light-default sm:h-64 lg:h-96"
                             >
                                 <img
                                     src="../../src/assets/img/mockup-formations-dessin-light.jpg"
@@ -206,7 +212,7 @@
                         </a>
                         <a href="">
                             <div
-                                class="relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96 dark:shadow-dark-default"
+                                class="dark:shadow-shadow-hero-dark relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96"
                             >
                                 <img
                                     src="../../src/assets/img/mockup-immo-prestige-light.jpg"
@@ -225,7 +231,7 @@
                         </a>
                         <a href="">
                             <div
-                                class="relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96 dark:shadow-dark-default"
+                                class="dark:shadow-shadow-hero-dark relative hidden h-64 overflow-hidden rounded-lg shadow-light-default sm:block lg:h-96"
                             >
                                 <img
                                     src="../../src/assets/img/mockup-mysteres-a-la-carte-light.png"
@@ -256,7 +262,7 @@
                         class="flex flex-col lg:flex-row lg:items-center lg:justify-center lg:gap-5"
                     >
                         <span
-                            class="mb-5 text-center text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm lg:mb-0 lg:text-left dark:text-red-pink-100"
+                            class="mb-5 text-center text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm lg:mb-0 lg:text-left lg:text-base dark:text-red-pink-100"
                         >
                             Filtres
                         </span>
@@ -268,7 +274,7 @@
                                 <select
                                     name="categories"
                                     id="categories"
-                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer dark:bg-red-pink-900 dark:shadow-dark-default"
+                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base dark:bg-red-pink-900 dark:shadow-dark-default"
                                 >
                                     <option value="">-- Catégories --</option>
                                     <option value="web" selected>
@@ -288,7 +294,7 @@
                                 <select
                                     name="languages"
                                     id="languages"
-                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer dark:bg-red-pink-900 dark:shadow-dark-default"
+                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base dark:bg-red-pink-900 dark:shadow-dark-default"
                                 >
                                     <option value="">-- Langages --</option>
                                     <option value="">Tailwind</option>
@@ -302,7 +308,7 @@
                                 <select
                                     name="sort"
                                     id="sort"
-                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer dark:bg-red-pink-900 dark:shadow-dark-default"
+                                    class="w-full rounded-md border-none bg-red-pink-100 text-xs font-bold shadow-light-default md:text-sm lg:cursor-pointer lg:text-base dark:bg-red-pink-900 dark:shadow-dark-default"
                                 >
                                     <option value="">-- Tri --</option>
                                     <option value="">Le plus récent</option>
