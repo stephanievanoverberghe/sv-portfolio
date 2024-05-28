@@ -1282,6 +1282,16 @@ select {
   background-color: rgb(193 15 66 / var(--tw-bg-opacity));
 }
 
+.bg-red-pink-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 111 136 / var(--tw-bg-opacity));
+}
+
+.bg-red-pink-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 163 177 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
@@ -1598,6 +1608,10 @@ select {
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -2121,6 +2135,10 @@ select {
 
   .lg\:duration-700 {
     transition-duration: 700ms;
+  }
+
+  .lg\:duration-500 {
+    transition-duration: 500ms;
   }
 
   .lg\:hover\:scale-105:hover {
