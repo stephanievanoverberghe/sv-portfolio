@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="../src/output.css" />
         <title>Porfolio - Projets</title>
     </head>
-
     <body
         class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
     >
@@ -71,7 +70,6 @@
                                 Projets
                             </a>
                         </li>
-
                         <li
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
@@ -107,31 +105,34 @@
                     <a
                         href="../pages/contact.html"
                         class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
-                        >Me contacter</a
                     >
+                        Me contacter
+                    </a>
                 </div>
             </header>
             <!-- HEADER MOBILE -->
             <header
-                class="fixed bottom-0 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
+                class="fixed bottom-0 z-50 flex w-full items-center justify-around border-t-[1px] border-red-pink-100 bg-red-pink-50 p-3.5 shadow-shadow-header sm:hidden dark:border-none dark:bg-red-pink-950 dark:shadow-dark-default"
             >
+                <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
-                    <button
-                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                    <a
+                        href="../index.html"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
                         <i class="fa-solid fa-house"></i>
-                    </button>
+                    </a>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <button
-                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
                         <i class="fa-solid fa-ellipsis"></i>
                     </button>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <button
-                        class="flex h-8 w-8 items-center justify-center rounded-full bg-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:shadow-dark-default"
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:bg-red-pink-950 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
                         <i
                             class="fa-solid fa-sun dark:hidden"
@@ -145,49 +146,122 @@
                 </div>
             </header>
             <!-- SECTION HERO -->
-            <div
-                class="container mx-auto flex flex-col items-center justify-center px-2 sm:mt-12 md:px-12"
+            <section
+                class="flex flex-col items-center justify-center xl:container md:mt-5 xl:mx-auto"
             >
-                <h1
-                    class="mb-4 text-center font-Patua text-4xl text-red-pink-700 sm:text-5xl md:text-start lg:text-6xl xl:text-7xl dark:text-red-pink-300"
+                <!-- Image hero pour mobile -->
+                <div
+                    class="flex h-64 w-full items-center justify-center rounded-b-[50px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default sm:hidden dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                 >
-                    Vanoverberghe Stéphanie
-                </h1>
-                <span
-                    class="text-center text-xl font-extralight tracking-[0.3em] text-red-pink-900 sm:text-2xl md:text-start lg:text-3xl xl:text-4xl dark:text-red-pink-50"
-                    >Développeuse Front-End</span
-                >
-                <div class="my-12">
                     <img
-                        src="../src/assets/img/profil.jpg"
-                        alt="Photo de Stéphanie Vanoverberghe"
-                        class="size-[176px] rounded-full shadow-light-default sm:size-[200px] md:size-[300px] lg:cursor-pointer dark:shadow-dark-default"
+                        class="hidden max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-900 to-red-pink-950 pt-10 shadow-dark-default dark:block"
+                        src="../src/assets/img/infographie-01-dark.png"
+                        alt=""
+                    />
+                    <img
+                        class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default dark:hidden"
+                        src="../src/assets/img/infographie-01.png"
+                        alt=""
                     />
                 </div>
-                <p class="text-justify text-base font-light lg:text-xl">
-                    Spécialisée en React, je façonne des interfaces utilisateurs
-                    réactives et intuitives qui améliorent l'engagement et
-                    l'expérience utilisateur. Forte de plus de 2 ans
-                    d'expérience en développement front-end, j'intègre les
-                    meilleures pratiques et technologies modernes pour créer des
-                    applications web dynamiques et performantes. Passionnée par
-                    le code propre et l'architecture durable, je cherche
-                    constamment à optimiser et innover dans chaque projet que je
-                    touche.
-                </p>
-            </div>
-        </div>
-
-        <main class="container mx-auto px-2">
-            <section
-                class="flex flex-col items-center justify-center py-12 md:block"
-            >
-                <h2
-                    class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
-                >
-                    Parcours
-                </h2>
                 <div
+                    class="mx-3 my-16 flex flex-col items-center justify-center text-center sm:mx-6 md:grid md:grid-cols-[300px_auto] md:gap-1 lg:gap-5 xl:mx-0 xl:gap-10"
+                >
+                    <div class="my-6 flex items-center justify-center">
+                        <img
+                            src="../src/assets/img/profil.jpg"
+                            alt="Photo de Stéphanie Vanoverberghe"
+                            class="size-[176px] rounded-full shadow-light-default lg:size-[200px] lg:cursor-pointer dark:shadow-dark-default"
+                        />
+                    </div>
+                    <div class="text-center md:text-start">
+                        <span
+                            class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
+                            >Qui je suis ?</span
+                        >
+                        <h1
+                            class="mb-4 mt-5 font-Patua text-2xl md:mt-7 md:text-4xl lg:text-start"
+                        >
+                            Vanoverberghe <br class="md:hidden" />
+                            <span
+                                class="text-red-pink-600 dark:text-red-pink-400"
+                                >Stéphanie</span
+                            >
+                        </h1>
+                        <p
+                            class="text-start text-sm leading-relaxed md:mt-7 md:text-base"
+                        >
+                            Spécialisée en React, je façonne des interfaces
+                            utilisateurs réactives et intuitives qui améliorent
+                            l'engagement et l'expérience utilisateur. Forte de
+                            plus de 2 ans d'expérience en développement
+                            front-end, j'intègre les meilleures pratiques et
+                            technologies modernes pour créer des applications
+                            web dynamiques et performantes. Passionnée par le
+                            code propre et l'architecture durable, je cherche
+                            constamment à optimiser et innover dans chaque
+                            projet que je touche.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <main
+            class="mx-3 flex flex-col items-center justify-center xl:container sm:mx-6 xl:mx-auto"
+        >
+            <section
+                class="flex w-full flex-col items-center justify-center py-12"
+            >
+                <nav
+                    class="h-24 w-full rounded-xl from-red-pink-100 to-red-pink-50 lg:bg-gradient-to-br lg:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 lg:dark:shadow-dark-pressed"
+                >
+                    <ul
+                        class="grid h-full grid-cols-1 items-center justify-between gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-4"
+                    >
+                        <li
+                            class="group h-full transform cursor-pointer rounded-xl bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95 md:text-base dark:from-red-pink-900 dark:to-red-pink-950 dark:text-red-pink-300 dark:shadow-dark-pressed"
+                        >
+                            <a
+                                href=""
+                                class="flex h-full w-full transform items-center justify-center p-3 transition-transform duration-300 ease-in-out group-hover:scale-90 lg:px-8"
+                                >Mon parcours</a
+                            >
+                        </li>
+                        <li
+                            class="group h-full transform rounded-xl bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed lg:cursor-pointer dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a
+                                href=""
+                                class="flex h-full w-full transform items-center justify-center p-3 transition-transform duration-300 ease-in-out group-hover:scale-90 lg:px-8"
+                                >Mes compétences</a
+                            >
+                        </li>
+                        <li
+                            class="group h-full transform rounded-xl bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed lg:cursor-pointer dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a
+                                href=""
+                                class="flex h-full w-full transform items-center justify-center p-3 transition-transform duration-300 ease-in-out group-hover:scale-90 lg:px-8"
+                                >Mon expérience</a
+                            >
+                        </li>
+                        <li
+                            class="group h-full transform rounded-xl bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed lg:cursor-pointer dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >
+                            <a
+                                href=""
+                                class="flex h-full w-full transform items-center justify-center p-3 transition-transform duration-300 ease-in-out group-hover:scale-90 lg:px-8"
+                                >Mes valeurs</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <h2 class="mt-16 text-center font-Patua text-lg md:text-2xl">
+                    Mon
+                    <span class="text-red-pink-400"> Parcours </span>
+                    .
+                </h2>
+                <!-- <div
                     class="my-28 hidden items-center justify-center -space-x-14 md:flex"
                 >
                     <div class="z-50 flex items-center">
@@ -241,9 +315,8 @@
                         ></div>
                     </div>
                 </div>
-
                 <div
-                    class="mt-12 border-l-8 border-red-pink-200 bg-red-pink-100 dark:border-red-pink-400 dark:bg-red-pink-800"
+                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 dark:border-red-pink-400 dark:bg-red-pink-800"
                 >
                     <div class="flex items-center gap-10 pt-4">
                         <span
@@ -271,7 +344,7 @@
                     </ul>
                 </div>
                 <div
-                    class="mt-12 border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
+                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
                 >
                     <div class="flex items-center gap-10 pt-4">
                         <span
@@ -300,7 +373,7 @@
                     </ul>
                 </div>
                 <div
-                    class="mt-12 border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
+                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
                 >
                     <div class="flex items-center gap-10 pt-4">
                         <span
@@ -327,7 +400,7 @@
                     </ul>
                 </div>
                 <div
-                    class="mt-12 border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
+                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
                 >
                     <div class="flex items-center gap-10 pt-4">
                         <span
@@ -358,7 +431,7 @@
                     </ul>
                 </div>
                 <div
-                    class="mt-12 border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
+                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
                 >
                     <div class="flex items-center gap-10 pt-4">
                         <span
@@ -386,231 +459,8 @@
                             ménage complet.
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </section>
-            <!-- <section class="flex flex-col items-center justify-center py-12 md:block">
-        <h2
-          class="mb-10 text-center font-Patua text-2xl sm:text-4xl dark:text-red-pink-200"
-        >
-          Compétences
-        </h2>
-        <div
-          class="mt-12 grid grid-cols-1 gap-y-12 md:grid-cols-1 md:grid-rows-4 md:gap-x-14 lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-48"
-        >
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">
-              Développement Front-end
-            </h3>
-            <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-            >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/sass.png"
-                  alt="Logo préprocessor Sass"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/tailwind.png"
-                  alt="Logo framework TailwindCSS"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/bootstrap.png"
-                  alt="Logo framework Bootstrap"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/javascript.png"
-                  alt="Logo JavaScript"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/typescript.png"
-                  alt="Logo Typescript"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/react.png"
-                  alt="Logo framework React"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/next.png"
-                  alt="Logo Next.js"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/redux.png"
-                  alt="Logo bibliothèque Javascript: Redux"
-                  class="w-12"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">Design UI/UX</h3>
-            <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-            >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/figma.png"
-                  alt="Logo Figma"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/xd.png"
-                  alt="Logo Adobe XD"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/illustrator.png"
-                  alt="Logo Adobe Illustrator"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/photoshop.png"
-                  alt="Logo Adobe Photoshop"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/premiere-pro.png"
-                  alt="Logo Adobe Premiere Pro"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/canva.png"
-                  alt="Logo Canva"
-                  class="w-12"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">Outils</h3>
-            <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-            >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/git.png"
-                  alt="Logo Git"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/github.png"
-                  alt="Logo GitHub"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/vite.png"
-                  alt="Logo Vite"
-                  class="w-12"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col items-center justify-center md:block">
-            <h3 class="font-Patua text-xl sm:text-2xl">
-              Compétences transversales
-            </h3>
-            <div
-              class="mt-5 grid grid-cols-2 gap-5 sm:grid-cols-4 sm:grid-rows-2 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-            >
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/english.png"
-                  alt="Logo drapeau anglais"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/team-work.png"
-                  alt="Logo Travail d'équipe"
-                  class="w-12"
-                />
-              </div>
-              <div
-                class="flex h-20 w-20 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
-              >
-                <img
-                  src="../src/assets/img/agility.png"
-                  alt="Logo agility"
-                  class="w-12"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
         </main>
         <footer
             class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
