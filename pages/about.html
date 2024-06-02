@@ -26,7 +26,7 @@
         class="bg-red-pink-50 text-red-pink-700 dark:bg-red-pink-950 dark:text-red-pink-100"
     >
         <div
-            class="grid grid-cols-1 grid-rows-1 bg-red-pink-50 sm:grid-rows-[100px_auto_100px] dark:bg-red-pink-950"
+            class="grid grid-cols-1 grid-rows-1 bg-red-pink-50 lg:h-screen lg:grid-rows-[100px_auto] dark:bg-red-pink-950"
         >
             <!-- HEADER DESKTOP AND TABLETTE -->
             <header
@@ -147,7 +147,7 @@
             </header>
             <!-- SECTION HERO -->
             <section
-                class="flex flex-col items-center justify-center xl:container md:mt-5 xl:mx-auto"
+                class="mx-3 flex flex-col items-center justify-center sm:mx-6 md:mx-10 md:mt-5 lg:mt-0"
             >
                 <!-- Image hero pour mobile -->
                 <div
@@ -165,9 +165,9 @@
                     />
                 </div>
                 <div
-                    class="mx-3 my-16 flex flex-col items-center justify-center text-center sm:mx-6 md:grid md:grid-cols-[300px_auto] md:gap-1 lg:gap-5 xl:mx-0 xl:gap-10"
+                    class="my-16 flex flex-col items-center justify-center text-center md:grid md:grid-cols-[300px_auto] md:gap-1 lg:gap-5 xl:gap-10"
                 >
-                    <div class="my-6 flex items-center justify-center">
+                    <div class="mb-6 flex items-center justify-center md:my-6">
                         <img
                             src="../src/assets/img/profil.jpg"
                             alt="Photo de Stéphanie Vanoverberghe"
@@ -207,339 +207,405 @@
             </section>
         </div>
         <main
-            class="mx-3 flex flex-col items-center justify-center xl:container sm:mx-6 xl:mx-auto"
+            class="mx-3 flex flex-col items-center justify-center sm:mx-6 md:mx-10"
         >
             <section class="my-16 w-full">
-                <nav class="mb-10">
-                    <ul class="grid grid-cols-1 gap-5">
+                <span
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                >
+                    En savoir plus sur moi ?
+                </span>
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
+                    C'est
+                    <span class="text-red-pink-400"> ici </span>
+                    .
+                </h2>
+                <nav
+                    class="mb-10 from-red-pink-100 to-red-pink-50 lg:mb-16 lg:rounded-md lg:bg-gradient-to-br dark:from-red-pink-900 dark:to-red-pink-950"
+                >
+                    <ul
+                        class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+                    >
                         <li
-                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed lg:cursor-pointer dark:from-red-pink-900 dark:to-red-pink-950 dark:text-red-pink-300 dark:shadow-dark-pressed"
+                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold text-red-pink-600 shadow-light-pressed md:text-base lg:cursor-pointer dark:from-red-pink-900 dark:to-red-pink-950 dark:text-red-pink-300 dark:shadow-dark-pressed"
                         >
                             <a href="" class="p-8">Mon parcours</a>
                         </li>
                         <li
-                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                        >
-                            <a href="" class="">Mes compétences</a>
-                        </li>
-                        <li
-                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
+                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
                         >
                             <a href="" class="">Mon expérience</a>
                         </li>
                         <li
-                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
+                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
+                        >
+                            <a href="" class="">Mes compétences</a>
+                        </li>
+                        <li
+                            class="flex h-12 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 text-sm font-bold shadow-light-default md:text-base lg:cursor-pointer lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
                         >
                             <a href="" class="">Mes valeurs</a>
                         </li>
                     </ul>
                 </nav>
-                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
-                    Mon
-                    <span class="text-red-pink-400"> Parcours </span>
-                    .
+                <h2
+                    class="mb-5 text-center font-Patua text-lg text-red-pink-600 sm:mb-10 md:text-2xl dark:text-red-pink-400"
+                >
+                    Mon parcours
                 </h2>
-                <!-- <div
-                    class="my-28 hidden items-center justify-center -space-x-14 md:flex"
+                <div
+                    class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
                 >
-                    <div class="z-50 flex items-center">
+                    <div
+                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="z-10 flex h-10 items-center justify-center rounded-r-full bg-red-pink-50 shadow-light-pressed md:w-32 lg:h-12 lg:w-40 xl:h-16 xl:w-48 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                         >
-                            <span class="font-Patua lg:text-xl">2005</span>
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2024 à Présent</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    CDA Front-End JavaScript React
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >Openclassrooms - Distanciel</span
+                                >
+                            </div>
                         </div>
-                        <div
-                            class="dark:bg-red-pink-70 z-0 h-16 w-16 -translate-x-10 rotate-45 bg-red-pink-100 shadow-light-default lg:cursor-pointer xl:h-24 xl:w-24 dark:bg-red-pink-700 dark:shadow-dark-default"
-                        ></div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>
+                                Créations de 11 projets en situation
+                                d’entreprise.
+                            </li>
+                            <li>
+                                Maîtrise des langages HTML, CSS, SASS,
+                                Bootstrap, JavaScript, React.
+                            </li>
+                            <li>
+                                Écrire des tests unitaires, interagir et
+                                modéliser une API.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="z-40 flex items-center">
+                    <div
+                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="z-10 flex h-10 items-center justify-center rounded-r-full bg-red-pink-50 shadow-light-pressed md:w-32 lg:h-12 lg:w-40 xl:h-16 xl:w-48 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                         >
-                            <span class="font-Patua lg:text-xl">2013</span>
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2024 à Présent</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    Graduate Web et communication visuelle
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >Studi - Distanciel</span
+                                >
+                            </div>
                         </div>
-                        <div
-                            class="dark:bg-red-pink-70 z-0 h-16 w-16 -translate-x-10 rotate-45 bg-red-pink-100 shadow-light-default lg:cursor-pointer xl:h-24 xl:w-24 dark:bg-red-pink-700 dark:shadow-dark-default"
-                        ></div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>
+                                Travaille sur diverses projets en situation
+                                d'entreprise.
+                            </li>
+                            <li>
+                                Gestion de projet, veille, UX design, UI design,
+                                responsive design, datavisualisation
+                                accessibilité, print...
+                            </li>
+                            <li>
+                                Maîtrise de Photoshop, Illustrator, Indesign,
+                                Première Pro, After Effects, WordPress, HTML,
+                                CSS.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="z-30 flex items-center">
+                    <div
+                        class="w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="z-10 flex h-10 items-center justify-center rounded-r-full bg-red-pink-50 shadow-light-pressed md:w-32 lg:h-12 lg:w-40 xl:h-16 xl:w-48 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                         >
-                            <span class="font-Patua lg:text-xl">2019</span>
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2022 à 2023</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    Développeur Web et Web Mobile
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >La Manu - Amiens</span
+                                >
+                            </div>
                         </div>
-                        <div
-                            class="dark:bg-red-pink-70 z-0 h-16 w-16 -translate-x-10 rotate-45 bg-red-pink-100 shadow-light-default lg:cursor-pointer xl:h-24 xl:w-24 dark:bg-red-pink-700 dark:shadow-dark-default"
-                        ></div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>
+                                Languages HTML, CSS, Bootstrap, JavaScript, PHP,
+                                SQL, Merise, Wordpress.
+                            </li>
+                            <li>
+                                Maquettage, UX design, Responsive design, SEO,
+                                stage de 40h en entreprise.
+                            </li>
+                            <li>
+                                Conception d'une plateforme E-learning en lien
+                                avec l'apprentissage du dessin.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="z-20 flex items-center">
+                    <div
+                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="z-10 flex h-10 items-center justify-center rounded-r-full bg-red-pink-50 shadow-light-pressed md:w-32 lg:h-12 lg:w-40 xl:h-16 xl:w-48 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                         >
-                            <span class="font-Patua lg:text-xl">2021</span>
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2019 à 2021</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    Gestionnaire de stocks
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >Laboratoire Bioamiens - Amiens</span
+                                >
+                            </div>
                         </div>
-                        <div
-                            class="dark:bg-red-pink-70 z-0 h-16 w-16 -translate-x-10 rotate-45 bg-red-pink-100 shadow-light-default lg:cursor-pointer xl:h-24 xl:w-24 dark:bg-red-pink-700 dark:shadow-dark-default"
-                        ></div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>Utilisation du logiciel Kalilab.</li>
+                            <li>
+                                Réceptionner, stocker et gérer les produits pour
+                                les techniciens et infirmières.
+                            </li>
+                            <li>
+                                Commander les produits. Vérifier la conformiter
+                                des produits. Faire la réappro.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="z-10 flex items-center">
+                    <div
+                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="z-10 flex h-10 items-center justify-center rounded-r-full bg-red-pink-50 shadow-light-pressed md:w-32 lg:h-12 lg:w-40 xl:h-16 xl:w-48 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
                         >
-                            <span class="font-Patua lg:text-xl">Présent</span>
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2013 à 2018</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    Saisonnière polyvalente
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >Club Med et divers hôtels**** indépendants
+                                    - Les Alpes</span
+                                >
+                            </div>
                         </div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>
+                                Rapidité, efficacité, esprit d'équipe, organisé,
+                                discrétion.
+                            </li>
+                            <li>
+                                Gérer une équipe. Entretenir les chambres.
+                                Gestion des plannings.
+                            </li>
+                            <li>
+                                Changer les draps. Faire les lits.
+                                Reaprovisionner les chambres en produits
+                                consommables. Effectuer ménage complet.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="hidden w-full border-l-8 border-red-pink-200 bg-gradient-to-br from-red-pink-100 to-red-pink-50 pr-2 shadow-light-default dark:border-red-pink-700 dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
                         <div
-                            class="dark:bg-red-pink-70 z-0 h-16 w-16 -translate-x-10 rotate-45 bg-red-pink-100 shadow-light-default lg:cursor-pointer xl:h-24 xl:w-24 dark:bg-red-pink-700 dark:shadow-dark-default"
-                        ></div>
+                            class="grid grid-cols-[1fr] items-center gap-5 pt-4"
+                        >
+                            <span
+                                class="rounded-e-full bg-red-pink-200 px-7 py-2 text-xs font-bold tracking-[3px] text-red-pink-950 shadow-light-default dark:bg-red-pink-700 dark:text-red-pink-50 dark:shadow-dark-default"
+                                >2005 à 2013</span
+                            >
+                            <div class="pl-4">
+                                <h3
+                                    class="font-Patua text-base text-red-pink-400 md:text-lg"
+                                >
+                                    Femme de chambre
+                                </h3>
+                                <span
+                                    class="text-xs uppercase tracking-[1px] text-red-pink-700 dark:text-red-pink-300"
+                                    >Intérimaire - Belgique</span
+                                >
+                            </div>
+                        </div>
+                        <ul
+                            class="list-inside list-disc p-4 text-sm leading-relaxed text-red-pink-950 md:text-base dark:text-red-pink-100"
+                        >
+                            <li>
+                                Rapidité, efficacité, esprit d'équipe, organisé,
+                                discrétion.
+                            </li>
+                            <li>
+                                Gérer une équipe. Entretenir les chambres.
+                                Gestion des plannings.
+                            </li>
+                            <li>
+                                Changer les draps. Faire les lits.
+                                Reaprovisionner les chambres en produits
+                                consommables. Effectuer ménage complet.
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div
-                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 dark:border-red-pink-400 dark:bg-red-pink-800"
-                >
-                    <div class="flex items-center gap-10 pt-4">
-                        <span
-                            class="rounded-e-full bg-red-pink-200 px-7 py-2 font-bold text-red-pink-950 shadow-light-default dark:bg-red-pink-400 dark:shadow-dark-default"
-                            >2024 à Présent</span
-                        >
-                        <h3 class="font-Patua text-lg">
-                            CDA Front-End JavaScript React chez Openclassrooms
-                        </h3>
-                    </div>
-                    <ul
-                        class="list-inside list-disc p-4 text-red-pink-950 dark:text-red-pink-100"
-                    >
-                        <li>
-                            Créations de 11 projets en situation d’entreprise
-                        </li>
-                        <li>
-                            Maîtrise des langages HTML, CSS, SASS, Bootstrap,
-                            JavaScript, React
-                        </li>
-                        <li>
-                            Écrire des tests unitaires, interagir et modéliser
-                            une API.
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
-                >
-                    <div class="flex items-center gap-10 pt-4">
-                        <span
-                            class="rounded-e-full bg-red-pink-200 px-7 py-2 font-bold text-red-pink-950 shadow-light-default dark:bg-red-pink-400 dark:shadow-dark-default"
-                            >2022 à 2023</span
-                        >
-                        <h3 class="font-Patua text-lg">
-                            Développeur Web et Web Mobile chez La Manu - Amiens
-                        </h3>
-                    </div>
-                    <ul
-                        class="list-inside list-disc p-4 text-red-pink-950 dark:text-red-pink-100"
-                    >
-                        <li>
-                            Languages HTML, CSS, Bootstrap, JavaScript, PHP,
-                            SQL, Merise, Wordpress.
-                        </li>
-                        <li>
-                            Maquettage, UX design, Responsive design, SEO, stage
-                            de 40h en entreprise.
-                        </li>
-                        <li>
-                            Conception d'une plateforme E-learning en lien avec
-                            l'apprentissage du dessin.
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
-                >
-                    <div class="flex items-center gap-10 pt-4">
-                        <span
-                            class="rounded-e-full bg-red-pink-200 px-7 py-2 font-bold text-red-pink-950 shadow-light-default dark:bg-red-pink-400 dark:shadow-dark-default"
-                            >2019 à 2021</span
-                        >
-                        <h3 class="font-Patua text-lg">
-                            Gestionnaire de stocks chez Laboratoire Bioamiens -
-                            Amiens
-                        </h3>
-                    </div>
-                    <ul
-                        class="list-inside list-disc p-4 text-red-pink-950 dark:text-red-pink-100"
-                    >
-                        <li>Utilisation du logiciel Kalilab.</li>
-                        <li>
-                            Réceptionner, stocker et gérer les produits pour les
-                            techniciens et infirmières.
-                        </li>
-                        <li>
-                            Commander les produits. Vérifier la conformiter des
-                            produits. Faire la réappro.
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
-                >
-                    <div class="flex items-center gap-10 pt-4">
-                        <span
-                            class="rounded-e-full bg-red-pink-200 px-7 py-2 font-bold text-red-pink-950 shadow-light-default dark:bg-red-pink-400 dark:shadow-dark-default"
-                            >2013 à 2018</span
-                        >
-                        <h3 class="font-Patua text-lg">
-                            Saisonnière polyvalente chez Club Med et divers
-                            hôtels**** indépendants - Les Alpes
-                        </h3>
-                    </div>
-                    <ul
-                        class="list-inside list-disc p-4 text-red-pink-950 dark:text-red-pink-100"
-                    >
-                        <li>
-                            Rapidité, efficacité, esprit d'équipe, organisé,
-                            discrétion.
-                        </li>
-                        <li>
-                            Gérer une équipe. Entretenir les chambres. Gestion
-                            des plannings.
-                        </li>
-                        <li>
-                            Changer les draps. Faire les lits. Reaprovisionner
-                            les chambres en produits consommables. Effectuer
-                            ménage complet.
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="mt-12 w-full border-l-8 border-red-pink-200 bg-red-pink-100 md:hidden dark:border-red-pink-400 dark:bg-red-pink-800"
-                >
-                    <div class="flex items-center gap-10 pt-4">
-                        <span
-                            class="rounded-e-full bg-red-pink-200 px-7 py-2 font-bold text-red-pink-950 shadow-light-default dark:bg-red-pink-400 dark:shadow-dark-default"
-                            >2005 à 2013</span
-                        >
-                        <h3 class="font-Patua text-lg">
-                            Femme de chambre chez Intérimaire - Belgique
-                        </h3>
-                    </div>
-                    <ul
-                        class="list-inside list-disc p-4 text-red-pink-950 dark:text-red-pink-100"
-                    >
-                        <li>
-                            Rapidité, efficacité, esprit d'équipe, organisé,
-                            discrétion.
-                        </li>
-                        <li>
-                            Gérer une équipe. Entretenir les chambres. Gestion
-                            des plannings.
-                        </li>
-                        <li>
-                            Changer les draps. Faire les lits. Reaprovisionner
-                            les chambres en produits consommables. Effectuer
-                            ménage complet.
-                        </li>
-                    </ul>
-                </div> -->
             </section>
         </main>
         <footer
-            class="mx-5 rounded-3xl bg-red-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+            class="mx-3 rounded-3xl bg-red-pink-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-6 sm:mb-10 sm:p-8 md:mx-10 lg:mx-10 dark:bg-red-pink-900 dark:shadow-dark-pressed"
         >
             <div
-                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-cols-3 sm:grid-rows-1 md:gap-5"
+                class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
             >
+                <!-- Section logo et liens sociaux -->
                 <div class="flex flex-col items-center justify-center">
                     <a href="../index.html" title="Accueil">
+                        <!-- Logo clair -->
                         <img
                             src="../src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
                             class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
                         />
+                        <!-- Logo sombre -->
                         <img
                             src="../src/assets/img/logo-dark.png"
                             alt="Logo du portfolio"
                             class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
                         />
                     </a>
-                    <div class="flex">
-                        <div
-                            class="mr-4 flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                    <div class="flex gap-4 md:gap-6">
+                        <a
+                            href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
                         >
-                            <a
-                                href="https://www.linkedin.com/in/stephanie-vanoverberghe/"
-                                target="_blank"
-                            >
-                                <img
-                                    src="../src/assets/img/linkedin.png"
-                                    alt="Logo Travail d'équipe"
-                                    class="w-8"
-                                />
-                            </a>
-                        </div>
-                        <div
-                            class="flex h-12 w-12 items-center justify-center rounded-md bg-red-pink-50 shadow-light-default hover:shadow-light-pressed dark:bg-red-pink-950 dark:shadow-dark-default hover:dark:shadow-dark-pressed"
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../src/assets/img/linkedin.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/stephanievanoverberghe"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
                         >
-                            <a
-                                href="https://github.com/stephanievanoverberghe"
-                                target="_blank"
-                            >
-                                <img
-                                    src="../src/assets/img/github.png"
-                                    alt="Logo agility"
-                                    class="w-8"
-                                />
-                            </a>
-                        </div>
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../src/assets/img/github.png"
+                                alt=""
+                            />
+                        </a>
+                        <a
+                            href="https://www.behance.net/vano-stephanie"
+                            target="_blank"
+                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
+                        >
+                            <img
+                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
+                                src="../src/assets/img/behance.png"
+                                alt=""
+                            />
+                        </a>
                     </div>
                 </div>
-                <div
-                    class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
-                >
-                    <span
-                        class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
-                        >Liens importants</span
+                <!-- Section des liens -->
+                <div class="flex justify-around">
+                    <div
+                        class="hidden items-center justify-center sm:flex sm:flex-col sm:items-start sm:justify-start"
                     >
-                    <a
-                        href="../pages/projects/projects.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Portfolio</a
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg dark:text-red-pink-300"
+                            >Liens importants</span
+                        >
+                        <a
+                            href="../pages/projects/projects.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Portfolio</a
+                        >
+                        <a
+                            href="../pages/contact.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Contact</a
+                        >
+                        <a
+                            href="../pages/blog/blog.html"
+                            class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Blog</a
+                        >
+                        <a
+                            href="../pages/about.html"
+                            class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >A propos</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
                     >
-                    <a
-                        href="../pages/contact.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Contact</a
-                    >
-                    <a
-                        href="../pages/blog/blog.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Blog</a
-                    >
-                    <a
-                        href="../pages/about.html"
-                        class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >A propos</a
-                    >
-                </div>
-                <div
-                    class="flex flex-col items-center justify-center sm:items-start sm:justify-start"
-                >
-                    <span
-                        class="mb-4 font-Patua text-base text-red-pink-700 dark:text-red-pink-200"
-                        >Informations légales</span
-                    >
-                    <a
-                        href="../pages/infos/legal-notice.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Mentions légales</a
-                    >
-                    <a
-                        href="../pages/infos/privacy-policy.html"
-                        class="mb-2 text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >Politique de confidentialité</a
-                    >
-                    <a
-                        href="../pages/infos/cgu.html"
-                        class="text-sm text-red-pink-950 transition-colors duration-300 lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
-                        >CGU</a
-                    >
+                        <span
+                            class="mb-7 font-Patua text-sm uppercase text-red-pink-700 lg:text-lg dark:text-red-pink-300"
+                            >Informations légales</span
+                        >
+                        <a
+                            href="../pages/infos/legal-notice.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Mentions légales</a
+                        >
+                        <a
+                            href="../pages/infos/privacy-policy.html"
+                            class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >Politique de confidentialité</a
+                        >
+                        <a
+                            href="../pages/infos/cgu.html"
+                            class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
+                            >CGU</a
+                        >
+                    </div>
                 </div>
             </div>
             <p class="mt-10 text-center text-xs">

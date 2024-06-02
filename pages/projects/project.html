@@ -22,30 +22,32 @@
             crossorigin="anonymous"
         ></script>
         <!-- Lien vers le fichier CSS -->
-        <link rel="stylesheet" href="./src/output.css" />
+        <link rel="stylesheet" href="../../src/output.css" />
         <!-- Titre de la page -->
-        <title>Vanoverberghe Stéphanie - Portfolio</title>
+        <title>Porfolio - Projets</title>
     </head>
 
     <body
         class="bg-red-pink-50 text-red-pink-950 dark:bg-red-pink-950 dark:text-red-pink-50"
     >
-        <div class="flex flex-col bg-red-pink-100 dark:bg-red-pink-950">
+        <div
+            class="grid grid-rows-1 bg-red-pink-100 sm:grid-rows-[100px_auto] sm:pt-0 dark:bg-red-pink-950"
+        >
             <!-- HEADER DESKTOP AND TABLETTE -->
             <header
-                class="hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-none"
+                class="z-50 hidden items-center justify-between rounded-full bg-red-pink-50 shadow-light-pressed sm:m-4 sm:flex dark:bg-red-pink-900 dark:shadow-dark-pressed"
             >
                 <div class="cursor-pointer">
-                    <a href="./index.html" title="Accueil">
+                    <a href="../../index.html" title="Accueil">
                         <!-- Logo clair -->
                         <img
-                            src="src/assets/img/logo-light.png"
+                            src="../../src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
                             class="ml-6 h-14 dark:hidden"
                         />
                         <!-- Logo sombre -->
                         <img
-                            src="src/assets/img/logo-dark.png"
+                            src="../../src/assets/img/logo-dark.png"
                             alt="Logo du portfolio"
                             class="ml-6 hidden h-14 dark:block"
                         />
@@ -59,17 +61,17 @@
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
                             <a
-                                href="pages/about.html"
+                                href="../../pages/about.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
                             >
                                 A propos
                             </a>
                         </li>
                         <li
-                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                            class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold text-red-pink-600 shadow-light-pressed transition-transform duration-300 ease-in-out hover:scale-95 dark:from-red-pink-900 dark:to-red-pink-950 dark:text-red-pink-300 dark:shadow-dark-pressed"
                         >
                             <a
-                                href="pages/projects/projects.html"
+                                href="../../pages/projects/projects.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
                             >
                                 Projets
@@ -79,7 +81,7 @@
                             class="group transform cursor-pointer rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 font-bold shadow-light-default transition-transform duration-300 ease-in-out hover:scale-95 hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
                         >
                             <a
-                                href="pages/blog/blog.html"
+                                href="../../pages/blog/blog.html"
                                 class="block h-full w-full transform px-8 py-2 transition-transform duration-300 ease-in-out group-hover:scale-90"
                             >
                                 Blog
@@ -113,11 +115,10 @@
                     </div>
                     <!-- Lien vers la page de contact -->
                     <a
-                        href="pages/contact.html"
+                        href="../../pages/contact.html"
                         class="hidden h-[68px] rounded-e-full bg-red-pink-50 p-5 shadow-light-default transition-shadow duration-300 ease-in-out hover:shadow-light-pressed lg:block dark:bg-red-pink-950 dark:shadow-dark-default dark:hover:shadow-dark-pressed"
+                        >Me contacter</a
                     >
-                        Me contacter
-                    </a>
                 </div>
             </header>
             <!-- HEADER MOBILE -->
@@ -127,7 +128,7 @@
                 <!-- Icônes pour la navigation mobile -->
                 <div class="flex flex-col items-center justify-center">
                     <a
-                        href="index.html"
+                        href="../../index.html"
                         class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
                         <i class="fa-solid fa-house"></i>
@@ -165,314 +166,271 @@
                 >
                     <img
                         class="hidden max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-900 to-red-pink-950 pt-10 shadow-dark-default dark:block"
-                        src="src/assets/img/infographie-01-dark.png"
+                        src="../../src/assets/img/infographie-03-dark.png"
                         alt=""
                     />
                     <img
                         class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default dark:hidden"
-                        src="src/assets/img/infographie-01.png"
+                        src="../../src/assets/img/infographie-03.png"
                         alt=""
                     />
                 </div>
-                <!-- Image hero pour desktop et tablette -->
+
                 <div
-                    class="mr-6 hidden items-center justify-center md:order-2 md:flex lg:min-h-screen lg:justify-center xl:ml-20 xl:mr-0"
-                >
-                    <img
-                        class="hidden max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-900 to-red-pink-950 pt-10 shadow-dark-default md:max-w-96 xl:max-w-[495px] dark:block"
-                        src="src/assets/img/infographie-01-dark.png"
-                        alt=""
-                    />
-                    <img
-                        class="max-w-60 rounded-[42px] bg-gradient-to-br from-red-pink-100 to-red-pink-50 pt-10 shadow-light-default md:max-w-96 xl:max-w-[495px] dark:hidden"
-                        src="src/assets/img/infographie-01.png"
-                        alt=""
-                    />
-                </div>
-                <!-- Texte de présentation -->
-                <div
-                    class="mx-3 my-16 flex flex-col items-center justify-center sm:mx-0 lg:items-start xl:mx-0"
+                    class="mx-3 my-16 flex flex-col items-center justify-center sm:mx-6 xl:mx-0"
                 >
                     <span
-                        class="text-xs uppercase tracking-[3px] text-red-pink-900 dark:text-red-pink-100"
-                        >Bienvenue dans mon monde</span
+                        class="text-center text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                        >Projet</span
                     >
                     <h1
-                        class="mb-4 mt-5 text-center font-Patua text-2xl md:mt-7 md:text-4xl lg:text-start"
+                        class="mb-4 mt-5 text-center font-Patua text-2xl md:mb-10 md:mt-7 md:text-4xl lg:text-start"
                     >
-                        Bonjour, je suis <br class="md:hidden" />
+                        Formations
                         <span class="text-red-pink-600 dark:text-red-pink-400"
-                            >Développeuse Front-End</span
+                            >Dessin</span
                         >
                     </h1>
-                    <h2 class="mb-5 font-Patua text-lg md:text-2xl">
-                        spécialisée en
-                        <span class="text-red-pink-600 dark:text-red-pink-400"
-                            >React</span
-                        >.
-                        <span class="text-red-pink-600 dark:text-red-pink-400">
-                            |
-                        </span>
-                    </h2>
-                    <p
-                        class="mb-6 text-sm leading-relaxed md:mt-7 md:text-base"
+                    <a
+                        href=""
+                        class="mb-5 text-center text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm lg:cursor-pointer lg:transition-colors lg:duration-300 lg:hover:text-red-pink-700 dark:text-red-pink-400 lg:dark:hover:text-red-pink-50"
+                        >Voir le site web</a
                     >
-                        J’utilise le développement web comme moyen d’exprimer ma
-                        créativité. Je suis passionnée depuis 2022. Pour voir ce
-                        que je crée, il suffit d’explorer mon portfolio, vous y
-                        trouverez mes projets les plus significatifs.
-                    </p>
-                    <!-- Boutons pour les réseaux sociaux et les compétences -->
-                    <div class="gap-20 sm:mt-4 sm:flex md:mt-10">
-                        <div
-                            class="flex flex-col items-center justify-center md:items-start"
-                        >
-                            <span
-                                class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
-                                >Me trouver</span
-                            >
-                            <div class="mb-6 mt-4 flex gap-4 md:gap-6">
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/linkedin.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/github.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/behance.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center md:items-start"
-                        >
-                            <span
-                                class="text-xs font-semibold uppercase tracking-[1px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
-                                >Meilleures compétences</span
-                            >
-                            <div class="mb-5 mt-4 flex gap-4 sm:mb-6 md:gap-6">
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/react.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/typescript.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/figma.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                >
-                                    <img
-                                        class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                        src="src/assets/img/redux.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
-                        </div>
+                    <div class="">
+                        <img
+                            src="../../src/assets/img/mockup-formations-dessin-light.jpg"
+                            alt=""
+                            class="h-full w-full rounded-xl object-cover shadow-light-default dark:hidden dark:shadow-dark-default"
+                        />
+                        <img
+                            src="../../src/assets/img/mockup-formations-dessin-dark.jpg"
+                            alt=""
+                            class="hidden h-full w-full rounded-xl object-cover shadow-light-default dark:block dark:shadow-dark-default"
+                        />
                     </div>
                 </div>
             </section>
         </div>
-        <!-- MAIN -->
-        <main
-            class="mx-3 flex flex-col items-center justify-center sm:mx-6 md:mx-10"
-        >
-            <section class="my-16 flex flex-col items-center lg:items-start">
+
+        <main class="mx-3 sm:mx-6 md:mx-10">
+            <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
                 >
-                    Particularité
+                    Créer un site web e-learning
                 </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
-                    Ce que je
-                    <span class="text-red-pink-400"> fais </span>
+                    Résumé du
+                    <span class="text-red-pink-400"> projet </span>
                     .
                 </h2>
-                <!-- Articles décrivant les compétences -->
+            </section>
+            <section class="my-16 flex flex-col items-center justify-center">
+                <span
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                >
+                    Détails du projet
+                </span>
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
+                    Technologies et détails
+                    <span class="text-red-pink-400"> techniques </span>
+                    .
+                </h2>
+            </section>
+            <section class="my-16 flex flex-col items-center justify-center">
+                <span
+                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
+                >
+                    Les étapes clés
+                </span>
+                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
+                    Processus de
+                    <span class="text-red-pink-400"> développement </span>
+                    .
+                </h2>
                 <div
-                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
+                    class="flex w-full flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
                 >
                     <!-- Article sur le Design UX -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i
+                            class="fa-solid fa-magnifying-glass fa-lg md:fa-xl"
+                        ></i>
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i
-                                class="fa-solid fa-ruler-combined fa-lg md:fa-xl"
-                            ></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Design UX
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Recherche et analyse
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Identification des besoins</li>
+                                <li>Analyse des concurrents</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
-                        >
-                            Je facilite l’expérience des utilisateurs derrière
-                            un écran (smartphones, tablettes, ordinateurs,
-                            etc.).
-                        </p>
                     </article>
                     <!-- Article sur le Design UI -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i class="fa-solid fa-map fa-lg md:fa-xl"></i>
+
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i class="fa-solid fa-palette fa-lg md:fa-xl"></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Design UI
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Planification
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Définition des objectifs</li>
+                                <li>Roadmap du projet</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
-                        >
-                            Je conçois le design graphique de vos sites web
-                            (couleurs, illustrations, typographie, etc.).
-                        </p>
                     </article>
                     <!-- Article sur le Développement web -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i
+                            class="fa-solid fa-wand-magic-sparkles fa-lg md:fa-xl"
+                        ></i>
+
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Développement web
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Conception UX/UI
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Identité visuelle</li>
+                                <li>Wireframes et maquettes</li>
+                                <li>Prototype</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
-                        >
-                            Je réalise l’ensemble des fonctionnalités techniques
-                            de votre site web ou application.
-                        </p>
                     </article>
                     <!-- Article sur le Référencement -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
+
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i
-                                class="fa-solid fa-magnifying-glass-chart fa-lg md:fa-xl"
-                            ></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Référencement
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Développement front-end
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Structure HTML</li>
+                                <li>Stylisation CSS et Bootstrap</li>
+                                <li>Interactivité JavaScript</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
-                        >
-                            J’optimise vos pages web pour augmenter leurs
-                            visibilités dans les moteurs de recherches.
-                        </p>
                     </article>
                     <!-- Article sur les Réseaux sociaux -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i class="fa-solid fa-code fa-lg md:fa-xl"></i>
+
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i
-                                class="fa-solid fa-tower-cell fa-lg md:fa-xl"
-                            ></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Réseaux sociaux
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Développement back-end
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Langage PHP</li>
+                                <li>Base de données SQL</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
-                        >
-                            J’organise et je développe votre communauté en ligne
-                            grâce à un plan sur-mesure.
-                        </p>
                     </article>
                     <!-- Article sur la Maintenance -->
                     <article
-                        class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                     >
+                        <i class="fa-solid fa-bug fa-lg md:fa-xl"></i>
                         <div
-                            class="flex items-center text-red-pink-600 dark:text-red-pink-400"
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            <i class="fa-solid fa-wrench fa-lg md:fa-xl"></i>
-                            <h3 class="ms-5 font-Patua text-base md:text-lg">
-                                Maintenance
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Intégration et test
                             </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Gestion du code source</li>
+                                <li>Tests et débogage</li>
+                            </ul>
                         </div>
-                        <p
-                            class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                    </article>
+                    <!-- Article sur la Maintenance -->
+                    <article
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <i class="fa-solid fa-globe fa-lg md:fa-xl"></i>
+                        <div
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
                         >
-                            Je participe à la maintenance de votre site web en
-                            corrigeant les bugs
-                        </p>
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Déploiement
+                            </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Hébergement</li>
+                                <li>Optimisation des performances</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- Article sur la Maintenance -->
+                    <article
+                        class="grid grid-cols-[50px_auto] items-center rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
+                    >
+                        <i class="fa-solid fa-hammer fa-lg md:fa-xl"></i>
+                        <div
+                            class="items-center text-red-pink-600 dark:text-red-pink-400"
+                        >
+                            <h3 class="font-Patua text-base md:text-lg">
+                                Lancement et suivi
+                            </h3>
+                            <ul
+                                class="my-3 text-sm leading-relaxed text-red-pink-800 md:text-base dark:text-red-pink-50"
+                            >
+                                <li>Lancement</li>
+                                <li>Suivi et maintenance</li>
+                            </ul>
+                        </div>
                     </article>
                 </div>
             </section>
-            <!-- PROJETS REALISES -->
-            <section class="my-16 flex flex-col items-center lg:items-start">
+            <section class="my-16 flex flex-col items-center justify-center">
                 <span
                     class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
                 >
-                    Projets réalisés
+                    Ils sont également intéressants
                 </span>
                 <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
-                    Ce que j'ai déjà
-                    <span class="text-red-pink-600 dark:text-red-pink-400">
-                        fais</span
-                    >
+                    Voir d'autres
+                    <span class="text-red-pink-400"> projet </span>
                     .
                 </h2>
-                <!-- Articles décrivant les projets réalisés -->
                 <div
-                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-3"
                 >
                     <!-- PROJECT 1 -->
-                    <a href="pages/projects/project.html">
+                    <a href="../projects/project.html">
                         <article
                             class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
@@ -480,12 +438,12 @@
                                 class="relative h-full overflow-hidden rounded-lg"
                             >
                                 <img
-                                    src="src/assets/img/mockup-formations-dessin-light.jpg"
+                                    src="../../src/assets/img/mockup-formations-dessin-light.jpg"
                                     alt=""
                                     class="h-full w-full object-cover dark:hidden"
                                 />
                                 <img
-                                    src="src/assets/img/mockup-formations-dessin-dark.jpg"
+                                    src="../../src/assets/img/mockup-formations-dessin-dark.jpg"
                                     alt=""
                                     class="hidden h-full w-full object-cover dark:block"
                                 />
@@ -531,7 +489,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
+                                                src="../../src/assets/img/figma.png"
                                                 alt=""
                                             />
                                         </div>
@@ -540,7 +498,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/javascript.png"
+                                                src="../../src/assets/img/javascript.png"
                                                 alt=""
                                             />
                                         </div>
@@ -549,7 +507,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/php.png"
+                                                src="../../src/assets/img/php.png"
                                                 alt=""
                                             />
                                         </div>
@@ -558,7 +516,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/sql.png"
+                                                src="../../src/assets/img/sql.png"
                                                 alt=""
                                             />
                                         </div>
@@ -567,9 +525,8 @@
                             </div>
                         </article>
                     </a>
-
                     <!-- PROJECT 2 -->
-                    <a href="pages/projects/project.html">
+                    <a href="../projects/project.html">
                         <article
                             class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
@@ -577,12 +534,12 @@
                                 class="relative h-full overflow-hidden rounded-lg"
                             >
                                 <img
-                                    src="src/assets/img/mockup-immo-prestige-light.jpg"
+                                    src="../../src/assets/img/mockup-immo-prestige-light.jpg"
                                     alt=""
                                     class="h-full w-full object-cover dark:hidden"
                                 />
                                 <img
-                                    src="src/assets/img/mockup-immo-prestige-dark.jpg"
+                                    src="../../src/assets/img/mockup-immo-prestige-dark.jpg"
                                     alt=""
                                     class="hidden h-full w-full object-cover dark:block"
                                 />
@@ -628,7 +585,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
+                                                src="../../src/assets/img/figma.png"
                                                 alt=""
                                             />
                                         </div>
@@ -637,7 +594,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/react.png"
+                                                src="../../src/assets/img/react.png"
                                                 alt=""
                                             />
                                         </div>
@@ -646,7 +603,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/redux.png"
+                                                src="../../src/assets/img/redux.png"
                                                 alt=""
                                             />
                                         </div>
@@ -656,7 +613,7 @@
                         </article>
                     </a>
                     <!-- PROJECT 3 -->
-                    <a href="pages/projects/project.html">
+                    <a href="../projects/project.html">
                         <article
                             class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
                         >
@@ -664,12 +621,12 @@
                                 class="relative h-full overflow-hidden rounded-lg"
                             >
                                 <img
-                                    src="src/assets/img/mockup-norel-art-light.jpg"
+                                    src="../../src/assets/img/mockup-norel-art-light.jpg"
                                     alt=""
                                     class="h-full w-full object-cover dark:hidden"
                                 />
                                 <img
-                                    src="src/assets/img/mockup-norel-art-dark.jpg"
+                                    src="../../src/assets/img/mockup-norel-art-dark.jpg"
                                     alt=""
                                     class="hidden h-full w-full object-cover dark:block"
                                 />
@@ -715,7 +672,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
+                                                src="../../src/assets/img/figma.png"
                                                 alt=""
                                             />
                                         </div>
@@ -724,7 +681,7 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/photoshop.png"
+                                                src="../../src/assets/img/photoshop.png"
                                                 alt=""
                                             />
                                         </div>
@@ -733,267 +690,37 @@
                                         >
                                             <img
                                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/illustrator.png"
+                                                src="../../src/assets/img/illustrator.png"
                                                 alt=""
                                             />
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- PROJECT 4 -->
-                    <a
-                        href="pages/projects/project.html"
-                        class="hidden sm:block lg:hidden xl:block"
-                    >
-                        <article
-                            class="group relative flex h-96 flex-col justify-between overflow-hidden rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                        >
-                            <div
-                                class="relative h-full overflow-hidden rounded-lg"
-                            >
-                                <img
-                                    src="src/assets/img/mockup-mysteres-a-la-carte-light.png"
-                                    alt=""
-                                    class="h-full w-full object-cover dark:hidden"
-                                />
-                                <img
-                                    src="src/assets/img/mockup-mysteres-a-la-carte-dark.png"
-                                    alt=""
-                                    class="hidden h-full w-full object-cover dark:block"
-                                />
-                                <div
-                                    class="absolute inset-0 bg-red-pink-300 opacity-25 dark:bg-red-pink-700"
-                                ></div>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-between transition-transform duration-500 lg:translate-y-full lg:transform lg:group-hover:translate-y-0"
-                            >
-                                <div
-                                    class="flex h-32 items-center justify-center rounded-t-lg"
-                                >
-                                    <div
-                                        class="rounded-lg bg-red-pink-50 dark:bg-red-pink-700"
-                                    >
-                                        <h3
-                                            class="p-5 font-Patua text-base md:text-lg"
-                                        >
-                                            Mystères à la Carte
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-b-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                                >
-                                    <h4
-                                        class="font-Patua text-sm uppercase tracking-[1px] text-red-pink-600 md:text-base dark:text-red-pink-400"
-                                    >
-                                        UX/UI design
-                                    </h4>
-                                    <p
-                                        class="mb-5 mt-3 text-sm leading-relaxed md:text-base"
-                                    >
-                                        Élaboration de la charte graphique. Mise
-                                        en situation du logo sur différents
-                                        mockups : casquettes, affiche
-                                        publicitaire, enseigne...
-                                    </p>
-                                    <div class="flex gap-4 md:gap-6">
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/figma.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/photoshop.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div
-                                            class="group flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-red-pink-100 to-red-pink-50 shadow-light-default transition-transform duration-300 md:h-12 md:w-12 lg:transform lg:hover:scale-95 lg:hover:shadow-light-pressed dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default lg:dark:hover:shadow-dark-pressed"
-                                        >
-                                            <img
-                                                class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                                src="src/assets/img/illustrator.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-            </section>
-            <section class="my-16 flex flex-col items-center lg:items-start">
-                <span
-                    class="text-xs uppercase tracking-[3px] text-red-pink-900 md:text-sm dark:text-red-pink-100"
-                >
-                    Sujets de prédilection
-                </span>
-                <h2 class="mb-5 font-Patua text-lg sm:mb-10 md:text-2xl">
-                    Ce qui me
-                    <span class="text-red-pink-600 dark:text-red-pink-400">
-                        passionne</span
-                    >
-                    .
-                </h2>
-                <!-- Articles décrivant les sujets de prédilection -->
-                <div
-                    class="flex auto-rows-fr flex-col gap-8 sm:grid sm:grid-cols-2 xl:gap-x-24 xl:gap-y-9"
-                >
-                    <a href="pages/blog/blog.html">
-                        <article
-                            class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid lg:grid-cols-[200px_auto] lg:transition-transform lg:duration-300 lg:hover:scale-105 xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                        >
-                            <div
-                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
-                            >
-                                <img
-                                    class="h-full w-full object-cover"
-                                    src="src/assets/img/ux-ui-design.jpg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lg:ml-3 xl:ml-6">
-                                <h3
-                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
-                                >
-                                    Le design UX/UI
-                                </h3>
-                                <p
-                                    class="pb-4 text-sm leading-relaxed md:text-base"
-                                >
-                                    L’ergonomie web, le design thinking, les
-                                    logiciels, la moodboard, les bonnes
-                                    pratiques, logo, palette de couleurs, charte
-                                    graphique ...
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a href="pages/blog/blog.html">
-                        <article
-                            class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid lg:grid-cols-[200px_auto] lg:transition-transform lg:duration-300 lg:hover:scale-105 xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                        >
-                            <div
-                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
-                            >
-                                <img
-                                    class="h-full w-full object-cover"
-                                    src="src/assets/img/developpement-web.jpg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lg:ml-3 xl:ml-6">
-                                <h3
-                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
-                                >
-                                    Le développement front-end
-                                </h3>
-                                <p
-                                    class="pb-4 text-sm leading-relaxed md:text-base"
-                                >
-                                    Les langages Front-End, HTML, CSS,
-                                    TailwindCSS, JavaScript, React, TypeScript,
-                                    la sémantique, les animations, les flexbox
-                                    ...
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="pages/blog/blog.html">
-                        <article
-                            class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid lg:grid-cols-[200px_auto] lg:transition-transform lg:duration-300 lg:hover:scale-105 xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                        >
-                            <div
-                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
-                            >
-                                <img
-                                    class="h-full w-full object-cover"
-                                    src="src/assets/img/communication-digitale.jpg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lg:ml-3 xl:ml-6">
-                                <h3
-                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
-                                >
-                                    La communication digitale
-                                </h3>
-                                <p
-                                    class="pb-4 text-sm leading-relaxed md:text-base"
-                                >
-                                    Réseaux sociaux, gestion de projet, analyse
-                                    de l’audience et du trafic, veille
-                                    technologique, le référencement ...
-                                </p>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="pages/blog/blog.html" class="hidden sm:block">
-                        <article
-                            class="flex h-full flex-col rounded-lg bg-gradient-to-br from-red-pink-100 to-red-pink-50 p-5 shadow-light-default lg:grid lg:grid-cols-[200px_auto] lg:transition-transform lg:duration-300 lg:hover:scale-105 xl:grid-cols-[300px_auto] dark:from-red-pink-900 dark:to-red-pink-950 dark:shadow-dark-default"
-                        >
-                            <div
-                                class="h-48 w-full overflow-hidden rounded-lg sm:h-36 lg:h-full"
-                            >
-                                <img
-                                    class="h-full w-full object-cover"
-                                    src="src/assets/img/elearning.jpg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lg:ml-3 xl:ml-6">
-                                <h3
-                                    class="my-4 text-center font-Patua text-base uppercase text-red-pink-600 lg:text-start dark:text-red-pink-400"
-                                >
-                                    Le E-learning
-                                </h3>
-                                <p
-                                    class="pb-4 text-sm leading-relaxed md:text-base"
-                                >
-                                    Création de plateforme d’apprentissage en
-                                    ligne, création de vidéos, les principaux
-                                    prestataires, les méthodes d’enseignements
-                                    ...
-                                </p>
                             </div>
                         </article>
                     </a>
                 </div>
             </section>
         </main>
-
         <!-- FOOTER -->
         <footer
-            class="mx-3 rounded-3xl bg-red-pink-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-6 sm:mb-10 sm:p-8 md:mx-10 lg:mx-10 dark:bg-red-pink-900 dark:shadow-dark-pressed"
+            class="mx-3 rounded-3xl bg-red-pink-100 px-8 pb-24 pt-8 shadow-light-pressed sm:mx-10 sm:mb-10 sm:p-8 dark:bg-red-pink-900 dark:shadow-dark-pressed"
         >
             <div
                 class="grid grid-cols-1 grid-rows-2 gap-10 sm:grid-rows-1 md:grid-cols-[200px_auto] md:gap-5 xl:grid-cols-[400px_auto]"
             >
                 <!-- Section logo et liens sociaux -->
                 <div class="flex flex-col items-center justify-center">
-                    <a href="./index.html" title="Accueil">
+                    <a href="../../index.html" title="Accueil">
                         <!-- Logo clair -->
                         <img
-                            src="src/assets/img/logo-light.png"
+                            src="../../src/assets/img/logo-light.png"
                             alt="Logo du portfolio"
                             class="mb-5 h-24 transition-transform hover:scale-125 dark:hidden"
                         />
                         <!-- Logo sombre -->
                         <img
-                            src="src/assets/img/logo-dark.png"
+                            src="../../src/assets/img/logo-dark.png"
                             alt="Logo du portfolio"
                             class="mb-5 hidden h-24 transition-transform hover:scale-125 dark:block"
                         />
@@ -1006,7 +733,7 @@
                         >
                             <img
                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                src="src/assets/img/linkedin.png"
+                                src="../../src/assets/img/linkedin.png"
                                 alt=""
                             />
                         </a>
@@ -1017,7 +744,7 @@
                         >
                             <img
                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                src="src/assets/img/github.png"
+                                src="../../src/assets/img/github.png"
                                 alt=""
                             />
                         </a>
@@ -1028,7 +755,7 @@
                         >
                             <img
                                 class="h-6 w-6 transition-transform duration-300 md:h-9 md:w-9 lg:transform lg:group-hover:scale-90"
-                                src="src/assets/img/behance.png"
+                                src="../../src/assets/img/behance.png"
                                 alt=""
                             />
                         </a>
@@ -1044,22 +771,22 @@
                             >Liens importants</span
                         >
                         <a
-                            href="pages/projects/projects.html"
+                            href="../../pages/projects/projects.html"
                             class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >Portfolio</a
                         >
                         <a
-                            href="pages/contact.html"
+                            href="../../pages/contact.html"
                             class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >Contact</a
                         >
                         <a
-                            href="pages/blog/blog.html"
+                            href="../../pages/blog/blog.html"
                             class="mb-7 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >Blog</a
                         >
                         <a
-                            href="pages/about.html"
+                            href="../../pages/about.html"
                             class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >A propos</a
                         >
@@ -1072,17 +799,17 @@
                             >Informations légales</span
                         >
                         <a
-                            href="pages/infos/legal-notice.html"
+                            href="../../pages/infos/legal-notice.html"
                             class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >Mentions légales</a
                         >
                         <a
-                            href="pages/infos/privacy-policy.html"
+                            href="../../pages/infos/privacy-policy.html"
                             class="mb-6 text-xs text-red-pink-950 transition-colors duration-300 lg:mb-4 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >Politique de confidentialité</a
                         >
                         <a
-                            href="pages/infos/cgu.html"
+                            href="../../pages/infos/cgu.html"
                             class="text-xs text-red-pink-950 transition-colors duration-300 lg:text-base lg:hover:text-red-600 dark:text-red-pink-50 lg:dark:hover:text-red-400"
                             >CGU</a
                         >
@@ -1093,8 +820,6 @@
                 Copyright 2024 Vanoverberghe Stéphanie. Tous droits réservés.
             </p>
         </footer>
-
-        <!-- Liens vers fichiers JS -->
-        <script src="src/js/script.js"></script>
+        <script src="../../src/js/script.js"></script>
     </body>
 </html>
